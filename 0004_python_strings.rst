@@ -224,7 +224,7 @@ Method play ground level 2: Combining string methods
 
 Try to use methods as a chain reaction.
 
-Palindrome
+**Palindrome
 -------------------
 Write (if You can in one line) if the world is a palindrome - a string that reads the same forwards and backwards.
 For example
@@ -242,10 +242,3 @@ the instruction :keyword:`if` (also in connection with :keyword:`else` and :keyw
 
 This is quite a lot like for a first program. We still have a lot of work, anyhow you can be proud of
 what we have done so far!
-
-And if You did the obligatory task 1 You know there are some easter eggs in python and thats not all of them.
-Here is one more:
-
-    >>> True + True
-
-:-)

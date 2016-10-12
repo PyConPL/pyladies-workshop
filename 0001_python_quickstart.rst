@@ -499,6 +499,42 @@ All arguments are given in parentheses. To specify more than one, separate them 
     >>> int("FF", 16)
     255
 
+Every value is an object
+------------------------
+
+Everything that we have called a value until now can be called “an object” in the world of Python. We saw it in the
+example of integers, when :func:`help` printed for us dozens of additional lines of information about
+:func:`int`.
+
+
+Every object has a class
+------------------------
+
+The class is the type of an object.
+To know what is the class of an object, simply use the function :func:`type`:
+
+    >>> type(2)
+    <class 'int'>
+    >>> type(2.0)
+    <class 'float'>
+    >>> type("spam eggs")
+    <class 'str'>
+    >>> x = 1, 2
+    >>> type(x)
+    <class 'tuple'>
+    >>> type([])
+    <class 'list'>
+
+We have talked about classes you can see here earlier: ``int``, ``float``, ``str``, ``tuple``.
+
+When we use numbers in our program, we expect that it will behave like a number - we rely on our
+intuition.
+
+However, Python has to know exactly what it means to be a number, e.g., what should happen when we
+sum up two numbers and what when we divide them. The class ``int`` provides all this information and
+even more.
+
+
 Exercises
 ==================
 
@@ -538,4 +574,3 @@ We learnt the function :func:`print`, that prints information for the user and t
 We successfully created a program stored in a file and ran it. Our program asks the user to answer
 a few simple questions, performs calculations and presents results in the form which is useful for the
 user.
-

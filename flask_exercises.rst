@@ -43,3 +43,14 @@ there is a file with ASCII hangman pictures - hangman.py.
 
 Remember if a word has more then one asked letter You need to show all of them
 for ex. 'mama' is good testing word.
+
+
+**Palindrome
+-------------------
+Write (if You can in one line) if the world is a palindrome - a string that reads the same forwards and backwards.
+For example
+
+- kayak
+- mr owl ate my metal worm.
+- go hang a salami Im a lasagna hog.
+
