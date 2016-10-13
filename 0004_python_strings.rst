@@ -19,7 +19,7 @@ But you might not get what you expect:
 
 .. code-block:: python
 
-    >>> print letter
+    >>> print(letter)
     a
 
 For most people, the first letter of 'banana' is b, not a. But for computer scientists, the index is an offset from the beginning of the string, and the offset of the first letter is zero.
@@ -27,7 +27,7 @@ For most people, the first letter of 'banana' is b, not a. But for computer scie
 .. code-block:: python
 
    >>> letter = fruit[0]
-   >>> print letter
+   >>> print(letter)
    b
 
 So b is the 0th letter (“zero-eth”) of 'banana', a is the 1th letter (“one-eth”), and n is the 2th (“two-eth”) letter.
@@ -61,7 +61,7 @@ The reason for the IndexError is that there is no letter in ’banana’ with th
 .. code-block:: python
 
    >>> last = fruit[length-1]
-   >>> print last
+   >>> print(last)
    a
 
 Alternatively, you can use negative indices, which count backward from the end of the string. The expression fruit[-1] yields the last letter, fruit[-2] yields the second to last, and so on.
@@ -74,7 +74,7 @@ A lot of computations involve processing a string one character at a time. Often
 .. code-block:: python
 
     for char in fruit:
-        print char
+        print(char)
 
 Each time through the loop, the next character in the string is assigned to the variable char. The loop continues until no characters are left.
 
@@ -86,7 +86,7 @@ The following example shows how to use concatenation (string addition) and a for
    suffix = 'ack'
    
    for letter in prefixes:
-      print letter + suffix
+      print(letter + suffix)
 
 The output is:
 
@@ -107,9 +107,9 @@ A segment of a string is called a slice. Selecting a slice is similar to selecti
 .. code-block:: python
 
    >>> s = 'Monty Python'
-   >>> print s[0:5]
+   >>> print(s[0:5])
    Monty
-   >>> print s[6:12]
+   >>> print(s[6:12])
    Python
 
 The operator [n:m] returns the part of the string from the “n-eth” character to the “m-eth” character, including the first but excluding the last. This behavior is counterintuitive, but it might help to imagine the indices pointing between the characters, as in the following diagram:
@@ -149,7 +149,7 @@ The following program counts the number of times the letter a appears in a strin
    for letter in word:
       if letter == 'a':
          count = count + 1
-   print count
+   print(count)
 
 
 String methods
@@ -163,7 +163,7 @@ Instead of the function syntax upper(word), it uses the method syntax word.upper
 
    >>> word = 'banana'
    >>> new_word = word.upper()
-   >>> print new_word
+   >>> print(new_word)
    BANANA
 
 This form of dot notation specifies the name of the method, upper, and the name of the string to apply the method to, word. The empty parentheses indicate that this method takes no argument.
@@ -176,7 +176,7 @@ As it turns out, there is a string method named find that is remarkably similar 
 
    >>> word = 'banana'
    >>> index = word.find('a')
-   >>> print index
+   >>> print(index)
    1
 
 In this example, we invoke find on word and pass the letter we are looking for as a parameter.
@@ -222,18 +222,18 @@ The relational operators work on strings. To see if two strings are equal:
 .. code-block:: python
 
    if word == 'banana':
-      print  'All right, bananas.'
+      print('All right, bananas.')
 
 Other relational operations are useful for putting words in alphabetical order:
 
 .. code-block:: python
 
    if word < 'banana':
-      print 'Your word,' + word + ', comes before banana.'
+      print('Your word,' + word + ', comes before banana.')
    elif word > 'banana':
-      print 'Your word,' + word + ', comes after banana.'
+      print('Your word,' + word + ', comes after banana.')
    else:
-      print 'All right, bananas.'
+      print('All right, bananas.')
 
 Python does not handle uppercase and lowercase letters the same way that people do. All the uppercase letters come before all the lowercase letters, so:
 Your word, Pineapple, comes before banana.
