@@ -173,7 +173,7 @@ BMI calculator
 Now we are going to write a simple program to calculate `BMI` (`Body Mass Index`_).
 The formula for its calculation is as follows::
 
-    BMI = (mass (kg)) / (height (m)) squared
+    BMI = mass (kg) / ((height (m) squared)
 
 We already know how to divide, exponentiate, and print out numbers. Let's create a new file called ``bmi.py``
 and write a program that calculates our BMI:
