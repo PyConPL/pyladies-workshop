@@ -45,5 +45,3 @@ Now, it is possible to create a database with the :command:`flask` script::
    If you get an exception later on stating that a table cannot be found, check
    that you did execute the ``initdb`` command and that your table names are
    correct (singular vs. plural, for example).
-
-gContinue with :ref:`tutorial-views`

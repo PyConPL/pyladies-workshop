@@ -15,8 +15,8 @@ The one with the highest id (the newest entry) will be on top.  The rows
 returned from the cursor look a bit like dictionaries because we are using
 the :class:`sqlite3.Row` row factory.
 
-The view function will pass the entries to the :file:`show_entries.html`
-template and return the rendered one::
+The view function will pass the entries to the ``show_entries.html``
+template and return the rendered one
 
 .. code:: python
 
@@ -34,7 +34,7 @@ This view lets the user add new entries if they are logged in.  This only
 responds to ``POST`` requests; the actual form is shown on the
 `show_entries` page.  If everything worked out well, it will
 :func:`~flask.flash` an information message to the next request and
-redirect back to the `show_entries` page::
+redirect back to the ``show_entries`` page
 
 .. code:: python
 
