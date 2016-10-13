@@ -37,13 +37,6 @@ initialize it with the config from the same file in ``flaskr.py`:
     ))
     app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
-The :class:`~flask.Config` object works similarly to a dictionary, so it can be
-updated with new values.
-
-Simply define the environment variable :envvar:`FLASKR_SETTINGS` that points to
-a config file to be loaded.  The silent switch just tells Flask to not complain
-if no such environment key is set.
-
 The ``SECRET_KEY`` is needed to keep the client-side sessions secure.
 Choose that key wisely and as hard to guess and complex as possible.
 
