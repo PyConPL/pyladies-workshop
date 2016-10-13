@@ -14,6 +14,8 @@ import the values from there.
 
 Here are the import statements (in ``flaskr.py``)::
 
+.. code:: python
+          
     # all the imports
     import os
     import sqlite3
