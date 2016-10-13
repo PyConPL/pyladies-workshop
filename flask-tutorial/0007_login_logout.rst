@@ -39,7 +39,7 @@ again.
         return redirect(url_for('show_entries'))
 
 
-extend laytout.html
+extend layout.html
 -------------------
 
 .. sourcecode:: html+jinja
