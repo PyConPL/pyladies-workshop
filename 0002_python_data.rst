@@ -37,7 +37,7 @@ Let's start with a blank page by starting a new python interpreter:
     >>> L
     []
 
-At any time we can check how many items we have saved on our list by using the function :func:`len`.
+At any time we can check how many items we have saved on our list by using the function ``len``.
 
     >>> len(L)
     0
@@ -68,7 +68,7 @@ To preview a particular position of an element on the list (remember that we cou
      File "<stdin>", line 1, in <module>
     IndexError: list index out of range
 
-We can also use the loop :keyword:`for`,to execute instructions for every element of the list:
+We can also use the loop ``for``,to execute instructions for every element of the list:
 
     >>> for name in L:
     ...     print("Name:", name)
@@ -278,15 +278,7 @@ Compare the solutions across the group and ask the Mentor which one is the best 
 
 Create the best solution.
 
-2. Sentences
-
-Remember how You can format a string using ''.format() ? Ask mentor about magic ** dictionary unpack and write a scrip that will print out a sentence for each team member (in "" should be data from the 1. exercise):
-
-Option a) "name" is "age" old and is working as "occupation". "name" prefers "fav_mouse_color_point" mouse pointer.
-
-Option b) (harder) "name" is "age" old and is working as "occupation". "He/She - based on gender" prefers "x" operating system:  MacOS = Black, Linux = White, other = Windows.
-
-3. Dictionary methods
+2. Dictionary methods
 
 Try out: .get(key), .has_key(key), .items(), .keys(), .update(dict_2), .values()
 
