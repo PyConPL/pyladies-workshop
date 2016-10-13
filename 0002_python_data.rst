@@ -255,12 +255,12 @@ In Python You can create nested objects like:
                     'humidity': 35,
                 },
                 'location': 'run free',
-            },
+            }
+        },
         'contact': {
             'telephone': '0 700 800 900',
             'email': 'zoo@zoo.zoo'
             }
-          }
     }
 
 As You can see there can be a dict or a list inside of a dict of dicts :)
