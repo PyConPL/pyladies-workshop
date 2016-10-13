@@ -71,12 +71,6 @@ This template contains the HTML skeleton, the header and a link to log in
 flashed messages if there are any.  The ``{% block body %}`` block can be
 replaced by a block of the same name (``body``) in a child template.
 
-The :class:`~flask.session` dict is available in the template as well and
-you can use that to check if the user is logged in or not.  Note that in
-Jinja you can access missing attributes and items of objects / dicts which
-makes the following code work, even if there is no ``'logged_in'`` key in
-the session:
-
 .. sourcecode:: html+jinja
 
     <!doctype html>
