@@ -9,6 +9,8 @@ page.  In addition, a message is flashed that informs the user that he or
 she was logged in successfully.  If an error occurred, the template is
 notified about that, and the user is asked again::
 
+.. code:: python
+          
     @app.route('/login', methods=['GET', 'POST'])
     def login():
         error = None
@@ -30,7 +32,8 @@ will delete the key from the dictionary if present or do nothing when that
 key is not in there.  This is helpful because now it is not necessary to
 check if the user was logged in.
 
-::
+
+.. code:: python
 
     @app.route('/logout')
     def logout():

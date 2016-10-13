@@ -14,6 +14,8 @@ command that initializes the database.  For now just take a look at the
 code segment below.  A good place to add this function, and command, is
 just below the `connect_db` function in :file:`flaskr.py`::
 
+.. code:: python  
+
     def init_db():
         db = get_db()
         with app.open_resource('schema.sql', mode='r') as f:
@@ -44,4 +46,4 @@ Now, it is possible to create a database with the :command:`flask` script::
    that you did execute the ``initdb`` command and that your table names are
    correct (singular vs. plural, for example).
 
-Continue with :ref:`tutorial-views`
+gContinue with :ref:`tutorial-views`

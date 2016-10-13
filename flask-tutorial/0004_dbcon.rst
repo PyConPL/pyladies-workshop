@@ -8,7 +8,7 @@ specified database.  This can be used to open a connection on request and
 also from the interactive Python shell or a script.  This will come in
 handy later.
 
-.. sourcecode:: python
+.. code:: python
 
     def connect_db():
         """Connects to the specific database."""
@@ -40,6 +40,8 @@ function.  The first time the function is called, it will create a database
 connection for the current context, and successive calls will return the
 already established connection::
 
+.. code:: python
+          
     def get_db():
         """Opens a new database connection if there is none yet for the
         current application context.
@@ -49,16 +51,18 @@ already established connection::
         return g.sqlite_db
 
 Now you know how to connect, but how can you properly disconnect?  For
-that, Flask provides us with the :meth:`~flask.Flask.teardown_appcontext`
+that, Flask provides us with the ``flask.Flask.teardown_appcontext``
 decorator.  It's executed every time the application context tears down::
 
+.. code:: python
+          
     @app.teardown_appcontext
     def close_db(error):
         """Closes the database again at the end of the request."""
         if hasattr(g, 'sqlite_db'):
             g.sqlite_db.close()
 
-Functions marked with :meth:`~flask.Flask.teardown_appcontext` are called
+Functions marked with ``flask.Flask.teardown_appcontext`` are called
 every time the app context tears down.  What does this mean?
 Essentially, the app context is created before the request comes in and is
 destroyed (torn down) whenever the request finishes.  A teardown can
@@ -67,7 +71,7 @@ parameter will be ``None``) or an exception happened, in which case the error
 is passed to the teardown function.
 
 Curious about what these contexts mean?  Have a look at the
-:ref:`app-context` documentation to learn more.
+``app-context`` documentation to learn more.
 
 .. _example source:
    https://github.com/pallets/flask/tree/master/examples/flaskr/

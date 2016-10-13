@@ -18,6 +18,8 @@ the :class:`sqlite3.Row` row factory.
 The view function will pass the entries to the :file:`show_entries.html`
 template and return the rendered one::
 
+.. code:: python
+
     @app.route('/')
     def show_entries():
         db = get_db()
@@ -33,6 +35,8 @@ responds to ``POST`` requests; the actual form is shown on the
 `show_entries` page.  If everything worked out well, it will
 :func:`~flask.flash` an information message to the next request and
 redirect back to the `show_entries` page::
+
+.. code:: python
 
     @app.route('/add', methods=['POST'])
     def add_entry():
