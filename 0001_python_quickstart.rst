@@ -1,3 +1,17 @@
+===================
+Activate Virtualenv
+===================
+
+.. code-block:: bat
+
+    :: Windows
+    C:\Users\lrekucki> workshops\Scripts\activate
+
+.. code-block:: sh
+
+    # Linux or Mac
+    ~$ source workshops/bin/activate
+
 ======================
 Introduction to Python
 ======================
@@ -112,7 +126,7 @@ Or hold ``Ctrl+D`` (for Linux) or ``Ctrl+Z`` (for Windows).
 Exercise
 ========
 
-Try to close first close and the open ``python`` console again.  
+Try to close first close and the open ``python`` console again.
 
 
 
@@ -382,7 +396,7 @@ or to the string ``"60.5"``. Only we know that, so we have to include this infor
 
 Let’s introduce two more functions:
 
-    >>> help(int) 
+    >>> help(int)
     Help on class int in module builtins:
 
     class int(object)
