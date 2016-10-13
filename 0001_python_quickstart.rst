@@ -325,12 +325,12 @@ content of the program. It would be more convenient to enter the required values
 opening the program and get the BMI result.
 
 To write such a program, we need to learn how to use the functions. The first function we are
-going to learn is :func:`help`:
+going to learn is `help`:
 
     >>> help
     Type help() for interactive help, or help(object) for help about object.
 
-The :func:`help` function is very friendly and tells us how we should use it. It can also tell you how to
+The `help` function is very friendly and tells us how we should use it. It can also tell you how to
 use the other functions:
 
     >>> help(input)
@@ -345,7 +345,7 @@ use the other functions:
         is printed without a trailing newline before reading.
 
 
-We will use :func:`input` to load data from the user. As we read in the description, :func:`input` reads the
+We will use `input` to load data from the user. As we read in the description, `input` reads the
 string:
 
 .. code::
@@ -361,7 +361,7 @@ forget  to type ``()`` after the function name, the function is not called. In t
 you will not get any informations about errors, because the command you typed is still correct.
 
 
-Generally, function calls **return** some values. The :func:`input` function returns a string, that’s why
+Generally, function calls **return** some values. The `input` function returns a string, that’s why
 we can use it the same way that we used strings before.
 
 For example, we can use ``input()`` to save a given string as a name:
@@ -421,13 +421,13 @@ and
      |
      |  ...
 
-The :func:`help` function does not hesitate to inform us that, in fact,
-:func:`int` and :func:`float` are not functions but classes (we will talk about those later), hence the information about all the other things that you can use them for. For now, we
+The `help` function does not hesitate to inform us that, in fact,
+`int` and `float` are not functions but classes (we will talk about those later), hence the information about all the other things that you can use them for. For now, we
 are only interested in the basic functionality of converting strings into numbers of a
 determined type.
 
 
-Let’s test :func:`int` and :func:`float`:
+Let’s test `int` and `float`:
 
     >>> int("0")
     0
@@ -488,7 +488,7 @@ You can save this program to ``bmi.py`` and run ``python bmi.py``. The result sh
     65.5
     Your BMI is: 21.387755102040817
 
-In conclusion, to call a function we need to know its name (until now we learnt a bunch of functions: :func:`print`, :func:`help`, :func:`input`, :func:`int`, :func:`float` and :func:`quit`),
+In conclusion, to call a function we need to know its name (until now we learnt a bunch of functions: `print`, `help`, `input`, `int`, `float` and `quit`),
 and what data it expects from us (called the list of arguments).
 
 Entering just the name does not activate the function. It will tell us only that it is a function:
@@ -513,15 +513,15 @@ Every value is an object
 ------------------------
 
 Everything that we have called a value until now can be called “an object” in the world of Python. We saw it in the
-example of integers, when :func:`help` printed for us dozens of additional lines of information about
-:func:`int`.
+example of integers, when `help` printed for us dozens of additional lines of information about
+`int`.
 
 
 Every object has a class
 ------------------------
 
 The class is the type of an object.
-To know what is the class of an object, simply use the function :func:`type`:
+To know what is the class of an object, simply use the function `type`:
 
     >>> type(2)
     <class 'int'>
