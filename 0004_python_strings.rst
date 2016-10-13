@@ -1,244 +1,240 @@
-Strings formatting
-==================
-
-The last issue which we have mentioned above was the problem with too many digits in a printed BMI.
-Out of the three problems we had, this one is the easiest to solve.
-
-That’s why we left it for the end of our "adventure" with the BMI calculator. We already know
-that we can add strings to each other and multiply them by integers. You will see that we can also
-format them. But first we will need one more type of data (except the strings and the numbers we
-already know).
-
-
-.. _bmi-tuples:
-
-Tuples
-------
-
-At the beginning we mentioned that we can not use commas in numbers, because we will need them later
-while using tuples. And here they are:
-
-    >>> 1, 2, 3
-    (1, 2, 3)
-    >>> ("Ala", 15)
-    ('Ala', 15)
-    >>> x = 1,5
-    >>> print(x)
-    (1, 5)
-
-A tuple is nothing more than a few values grouped into one. The values we want to group should be
-separated by commas. The whole thing can be enclosed in parentheses to make it more clear, but it is
-not required. Except when we want to group none of the elements (however strange it may sound):
-
-    >>> ()
-    ()
-
-Tuples can be combined:
-
-    >>> names = ("Paulina", "Kowalska")
-    >>> details = (27, 1.70)
-    >>> names + details
-    ('Paulina', 'Kowalska', 27, 1.7)
-
-They may also contain other tuples e.g. information on a point on the map can be
-grouped as follows:
-
-    >>> point = ("Name of point", (x, y))
-
-where ``x`` and ``y`` are numbers.
-
-We can refer to the grouped values by using their positions in the tuple (counting form zero) e.g.:
-
-    >>> p = (10, 15)
-    >>> p[0]  #  first value
-    10
-    >>> p[1]  # second value
-    15
-
-
-Formatting plain
---------------------
-
-Going back to our program: currently the result is reduced to a single line. Now we want to write the
-BMI as a number and the interval in which it is located, that is to say::
-
-    Your BMI is equal: 21.39 (normal weight)
-
-Modify the current program so that the calculated BMI would be available under the name of ``bmi``,and
-the name of the interval under the name of ``category``. Then we can use :func:`print` and obtain the
-required result:
-
-.. testsetup::
-
-    bmi = 21.387755102040817
-    category = "normal weight"
-
-.. testcode::
-
-    print("Your BMI is equal:", bmi, "(" + category + ")")
-
-.. testoutput::
-    :hide:
-
-    Your BMI is equal: 21.387755102040817 (normal weight)
-
-Well, almost….We still have too many digits. We would also have a problem if we wanted to generate
-such a string and save with a name, because we use :func:`print` to separate the elements.
-Fortunately, there is a better way:
-
-    >>> bmi = 21.387755102040817
-    >>> category = "normal weight"
-    >>> result = "Your BMI: %f (%s)" % (bmi, category)
-    >>> result
-    'Your BMI: 21.387755 (normal weight)'
-    >>> print(result)
-    Your BMI: 21.387755 (normal weight)
-
-We have here a string and a tuple joined by ``%``. The string is a template which will be completed
-with values from the tuple. The spaces to be filled are also labeled with the percentage (``%``). .
-The letter that follows defines the type of a value we want to insert. The integers are represented
-by  ``i`` as **integer** (we can also use ``d`` as **decimal**),  strings are represented by ``s`` as
-**string**, and floating-point numbers are represented by ``f`` for **float**:
-
-    >>> "String: %s, Numbers: %d %f" % ("Ala", 10, 3.1415)
-    'String: Ala, Numbers: 10 3.141500'
-
-Now instead of nine decimal places we always get six, but the formatting has the advantage that it
-allows us to have more control by putting between ``%`` and ``f`` additional information, e.g. if you
-want to display only two places after the decimal point:
-
-
-    >>> "%.2f" % 3.1415
-    '3.14'
-    >>> "%.2f" % 21.387755102040817
-    '21.39'
-
-There are plenty options of formatting, so we will not show them all here. One of the most useful is
-the option of aligning to a specific number of characters:
-
-.. testcode::
-
-    WIDTH = 28
-
-    print("-" * WIDTH)
-    print("| Name and last name |  Weight  |")
-    print("-" * WIDTH)
-    print("| %15s | %6.2f |" % ("Łukasz", 67.5))
-    print("| %15s | %6.2f |" % ("Pudzian", 123))
-    print("-" * WIDTH)
-
-.. testoutput::
-
-    --------------------------------
-    | Name and last name  |  Weight|
-    --------------------------------
-    |              Łukasz |  67.50 |
-    |             Pudzian | 123.00 |
-    --------------------------------
-
-We can also align the string ``-``  to the left by putting before the number of characters:
-
-.. testcode::
-
-    WIDTH = 28
-
-    print("-" * WIDTH)
-    print("| Name and last name |  Weight |")
-    print("-" * WIDTH)
-    print("| %-15s | %6.2f |" % ("Łukasz", 67.5))
-    print("| %-15s | %6.2f |" % ("Pudzian", 123))
-    print("-" * WIDTH)
-
-.. testoutput::
-
-    -------------------------------
-    | Name and last name|  Weight |
-    -------------------------------
-    | Łukasz            |  67.50  |
-    | Pudzian           | 123.00  |
-    -------------------------------
-
-Aligning towards the centre is an additional exercise for you :).
-
-
-Formatting more Pythonic way
-----------------------------------------
-
-Methods
+=======
+Strings
 =======
 
-With string there is a lot of methods implemented already.
 
-1. capitalize() - Capitalizes first letter of string
-2. count(str, beg= 0,end=len(string)) - Counts how many times str occurs in string or in a substring of string if starting index beg and ending index end are given.
-3. endswith(suffix, beg=0, end=len(string)) - Determines if string or a substring of string (if starting index beg and ending index end are given) ends with suffix; returns true if so and false otherwise.
-4. find(str, beg=0 end=len(string)) - Determine if str occurs in string or in a substring of string if starting index beg and ending index end are given returns index if found and -1 otherwise.
-5. index(str, beg=0, end=len(string)) - Same as find(), but raises an exception if str not found.
-6. isalnum() - Returns true if string has at least 1 character and all characters are alphanumeric and false otherwise.
-7. isalpha() - Returns true if string has at least 1 character and all characters are alphabetic and false otherwise.
-8. isdigit() - Returns true if string contains only digits and false otherwise.
-9. islower() - Returns true if string has at least 1 cased character and all cased characters are in lowercase and false otherwise.
-10. isnumeric() - Returns true if a unicode string contains only numeric characters and false otherwise.
-11. isspace() - Returns true if string contains only whitespace characters and false otherwise.
-12. istitle() - Returns true if string is properly "titlecased" and false otherwise.
-13. isupper() - Returns true if string has at least one cased character and all cased characters are in uppercase and false otherwise.
-14. join(seq) - Merges (concatenates) the string representations of elements in sequence seq into a string, with separator string.
-15. len(string) - Returns the length of the string
-16. lower() - Converts all uppercase letters in string to lowercase.
-17. lstrip() - Removes all leading whitespace in string.
-18. max(str) - Returns the max alphabetical character from the string str.
-19. min(str) - Returns the min alphabetical character from the string str.
-20. replace(old, new [, max]) - Replaces all occurrences of old in string with new or at most max occurrences if max given.
-21. rfind(str, beg=0,end=len(string)) - Same as find(), but search backwards in string.
-22. rindex( str, beg=0, end=len(string)) - Same as index(), but search backwards in string.
-23. rstrip() - Removes all trailing whitespace of string.
-24. split(str="", num=string.count(str)) - Splits string according to delimiter str (space if not provided) and returns list of substrings; split into at most num substrings if given.
-25. splitlines( num=string.count('\n')) - Splits string at all (or num) NEWLINEs and returns a list of each line with NEWLINEs removed.
-26. startswith(str, beg=0,end=len(string)) - Determines if string or a substring of string (if starting index beg and ending index end are given) starts with substring str; returns true if so and false otherwise.
-27. strip([chars]) - Performs both lstrip() and rstrip() on string
-28. swapcase() - Inverts case for all letters in string.
-29. title() - Returns "titlecased" version of string, that is, all words begin with uppercase and the rest are lowercase.
-30. upper() - Converts lowercase letters in string to uppercase.
+A string is a sequence
+----------------------
 
-There is over 10 more methods but they are much more advanced.
+A string is a sequence of characters. You can access the characters one at a time with the bracket operator:
 
-Exercises
--------------------
+.. code-block:: python
+                
+    >>> fruit = 'banana'
+    >>> letter = fruit[1]
 
-Obligatory task
--------------------
+The second statement selects character number 1 from fruit and assigns it to letter. The expression in brackets is called an index. The index indicates which character in the sequence you want (hence the name).
 
-Type in interpreter:
+But you might not get what you expect:
 
-    >>> import antigravity
+.. code-block:: python
 
-This is very important library use it wise :)
+    >>> print letter
+    a
 
-Method play ground
--------------------
+For most people, the first letter of 'banana' is b, not a. But for computer scientists, the index is an offset from the beginning of the string, and the offset of the first letter is zero.
 
-Create a string and use all methods mentioned above.
+.. code-block:: python
 
-Method play ground level 2: Combining string methods
-----------------------------------------------------------------------------
+   >>> letter = fruit[0]
+   >>> print letter
+   b
 
-Try to use methods as a chain reaction.
+So b is the 0th letter (“zero-eth”) of 'banana', a is the 1th letter (“one-eth”), and n is the 2th (“two-eth”) letter.
 
-**Palindrome
--------------------
-Write (if You can in one line) if the world is a palindrome - a string that reads the same forwards and backwards.
-For example
+You can use any expression, including variables and operators, as an index, but the value of the index has to be an integer. Otherwise you get:
 
-- kayak
-- mr owl ate my metal worm.
-- go hang a salami Im a lasagna hog.
+.. code-block:: python
+  
+   >>> letter = fruit[1.5]
+   TypeError: string indices must be integers
+   8.2  len
+
+len is a built-in function that returns the number of characters in a string:
+
+.. code-block:: python
+
+   >>> fruit = 'banana'
+   >>> len(fruit)
+   6
+
+To get the last letter of a string, you might be tempted to try something like this:
+
+.. code-block:: python
+
+   >>> length = len(fruit)
+   >>> last = fruit[length]
+    IndexError: string index out of range
+
+The reason for the IndexError is that there is no letter in ’banana’ with the index 6. Since we started counting at zero, the six letters are numbered 0 to 5. To get the last character, you have to subtract 1 from length:
+
+.. code-block:: python
+
+   >>> last = fruit[length-1]
+   >>> print last
+   a
+
+Alternatively, you can use negative indices, which count backward from the end of the string. The expression fruit[-1] yields the last letter, fruit[-2] yields the second to last, and so on.
+
+Traversal with a for loop
+--------------------------
+
+A lot of computations involve processing a string one character at a time. Often they start at the beginning, select each character in turn, do something to it, and continue until the end. This pattern of processing is called a traversal. 
+
+.. code-block:: python
+
+    for char in fruit:
+        print char
+
+Each time through the loop, the next character in the string is assigned to the variable char. The loop continues until no characters are left.
+
+The following example shows how to use concatenation (string addition) and a for loop to generate an abecedarian series (that is, in alphabetical order). In Robert McCloskey’s book Make Way for Ducklings, the names of the ducklings are Jack, Kack, Lack, Mack, Nack, Ouack, Pack, and Quack. This loop outputs these names in order:
+
+.. code-block:: python
+
+   prefixes = 'JKLMNOPQ'
+   suffix = 'ack'
+   
+   for letter in prefixes:
+      print letter + suffix
+
+The output is:
+
+.. code-block:: python
+
+   Jack
+   Kack
+   Lack
+   Mack
+   Nack
+   Oack
+   Pack
+   Qack
 
 
-Summary
--------------------
+A segment of a string is called a slice. Selecting a slice is similar to selecting a character:
 
-We also know now that indentations can be important, especially when we want to use
-the instruction :keyword:`if` (also in connection with :keyword:`else` and :keyword:`elif`).
+.. code-block:: python
 
-This is quite a lot like for a first program. We still have a lot of work, anyhow you can be proud of
-what we have done so far!
+   >>> s = 'Monty Python'
+   >>> print s[0:5]
+   Monty
+   >>> print s[6:12]
+   Python
+
+The operator [n:m] returns the part of the string from the “n-eth” character to the “m-eth” character, including the first but excluding the last. This behavior is counterintuitive, but it might help to imagine the indices pointing between the characters, as in the following diagram:
+
+If you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string:
+
+.. code-block:: python
+
+   >>> fruit = 'banana'
+   >>> fruit[:3]
+   'ban'
+   >>> fruit[3:]
+   'ana'
+
+If the first index is greater than or equal to the second the result is an empty string, represented by two quotation marks:
+
+.. code-block:: python
+
+   >>> fruit = 'banana'
+   >>> fruit[3:3]
+   ''
+
+An empty string contains no characters and has length 0, but other than that, it is the same as any other string.
+
+Exercise 3   Given that fruit is a string, what does fruit[:] mean?
+
+
+Counting
+--------
+
+The following program counts the number of times the letter a appears in a string:
+
+.. code-block:: python
+
+   word = 'banana'
+   count = 0
+   for letter in word:
+      if letter == 'a':
+         count = count + 1
+   print count
+
+
+String methods
+--------------
+
+A method is similar to a function—it takes arguments and returns a value—but the syntax is different. For example, the method upper takes a string and returns a new string with all uppercase letters:
+
+Instead of the function syntax upper(word), it uses the method syntax word.upper().
+
+.. code-block:: python
+
+   >>> word = 'banana'
+   >>> new_word = word.upper()
+   >>> print new_word
+   BANANA
+
+This form of dot notation specifies the name of the method, upper, and the name of the string to apply the method to, word. The empty parentheses indicate that this method takes no argument.
+
+A method call is called an invocation; in this case, we would say that we are invoking upper on the word.
+
+As it turns out, there is a string method named find that is remarkably similar to the function we wrote:
+
+.. code-block:: python
+
+   >>> word = 'banana'
+   >>> index = word.find('a')
+   >>> print index
+   1
+
+In this example, we invoke find on word and pass the letter we are looking for as a parameter.
+Actually, the find method is more general than our function; it can find substrings, not just characters:
+
+.. code-block:: python
+
+   >>> word.find('na')
+   2
+
+It can take as a second argument the index where it should start:
+
+.. code-block:: python
+
+   >>> word.find('na', 3)
+   4
+
+And as a third argument the index where it should stop:
+
+.. code-block:: python
+
+   >>> name = 'bob'
+   >>> name.find('b', 1, 2)
+   -1
+
+This search fails because b does not appear in the index range from 1 to 2 (not including 2).
+
+The word ``in`` is a boolean operator that takes two strings and returns True if the first appears as a substring in the second:
+
+.. code-block:: python
+
+   >>> 'a' in 'banana'
+   True
+   >>> 'seed' in 'banana'
+   False
+
+
+String comparison
+-----------------
+
+The relational operators work on strings. To see if two strings are equal:
+
+.. code-block:: python
+
+   if word == 'banana':
+      print  'All right, bananas.'
+
+Other relational operations are useful for putting words in alphabetical order:
+
+.. code-block:: python
+
+   if word < 'banana':
+      print 'Your word,' + word + ', comes before banana.'
+   elif word > 'banana':
+      print 'Your word,' + word + ', comes after banana.'
+   else:
+      print 'All right, bananas.'
+
+Python does not handle uppercase and lowercase letters the same way that people do. All the uppercase letters come before all the lowercase letters, so:
+Your word, Pineapple, comes before banana.
+A common way to address this problem is to convert strings to a standard format, such as all lowercase, before performing the comparison. Keep that in mind in case you have to defend yourself against a man armed with a Pineapple.
