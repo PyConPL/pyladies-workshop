@@ -22,4 +22,23 @@ connections in a more intelligent way, allowing you to target different
 relational databases at once and more.  You might also want to consider
 one of the popular NoSQL databases if your data is more suited for those.
 
-.. _SQLAlchemy: http://www.sqlalchemy.org/
+
+Activate Virtualenv
+===================
+
+.. code-block:: bat
+
+    :: Windows
+    C:\Users\lrekucki> workshops\Scripts\activate
+
+.. code-block:: sh
+
+    # Linux or Mac
+    ~$ source workshops/bin/activate
+
+    
+Flask: Instalation and preparaion
+=================================
+
+$ pip install flask
+
