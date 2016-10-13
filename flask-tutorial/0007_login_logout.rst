@@ -7,7 +7,7 @@ username and password against the ones from the configuration and sets the
 key is set to ``True``, and the user is redirected back to the `show_entries`
 page.  In addition, a message is flashed that informs the user that he or
 she was logged in successfully.  If an error occurred, the template is
-notified about that, and the user is asked again
+notified about that, and the user is asked again (put this code in flaskr.py):
 
 .. code:: python
 
@@ -31,7 +31,7 @@ again.  There is a neat trick here: if you use the :meth:`~dict.pop` method
 of the dict and pass a second parameter to it (the default), the method
 will delete the key from the dictionary if present or do nothing when that
 key is not in there.  This is helpful because now it is not necessary to
-check if the user was logged in.
+check if the user was logged in (put this code in flaskr.py).
 
 
 .. code:: python
