@@ -38,7 +38,7 @@ safely on the :data:`~flask.g` object.
 So when do you put it on there?  To do that you can make a helper
 function.  The first time the function is called, it will create a database
 connection for the current context, and successive calls will return the
-already established connection::
+already established connection
 
 .. code:: python
           
@@ -52,7 +52,7 @@ already established connection::
 
 Now you know how to connect, but how can you properly disconnect?  For
 that, Flask provides us with the ``flask.Flask.teardown_appcontext``
-decorator.  It's executed every time the application context tears down::
+decorator.  It's executed every time the application context tears down
 
 .. code:: python
           
