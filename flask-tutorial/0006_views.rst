@@ -34,7 +34,7 @@ This view lets the user add new entries if they are logged in.  This only
 responds to ``POST`` requests; the actual form is shown on the
 `show_entries` page.  If everything worked out well, it will
 :func:`~flask.flash` an information message to the next request and
-redirect back to the ``show_entries`` page
+redirect back to the ``show_entries`` page (put this code in flaskr.py):
 
 .. code:: python
 
