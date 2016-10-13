@@ -51,6 +51,8 @@ In the next section you will see how to run the application.
 
 With that out of the way, you should be able to start up the application without problems. Do this with the following commands:
 
+.. code:: bash
+          
     export FLASK_APP=flaskr.py
     export FLASK_DEBUG=1
     flask run
