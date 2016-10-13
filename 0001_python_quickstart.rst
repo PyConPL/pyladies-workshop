@@ -13,11 +13,9 @@ Let’s start with running the Python interpreter we installed in the previous c
     >>>
 
 Earlier we were working in the operating system's command line and we could give commands.
-The prompt was ``~$``. After running the ``python`` command, the prompt changed to
+The prompt (command line end) was ``$`` (or) ``>``. After running the ``python`` command, the prompt changed to
 ``>>>``.  For us, that means that for now we may only use commands from the Python language. Recent commands (
 such as: ``cd``, ``mkdir``) will not work. This is the moment when we start to learn a new language!
-
-We don't type the prompt ``>>>`` (the same as with ``~$``) - the interpreter will do that for us.
 
 
 Now we can count something, for example: ``2 + 2``:
@@ -42,9 +40,7 @@ Python is excellent as a calculator:
     >>> 5 % 2
     1
 
-Please pay special attention when writing decimals: use a period, not a comma. Commas will be used to
-define :ref:`tuple <bmi-tuples>` (but more on that later).
-% operator is modulo so the rest after dividing.
+Please pay special attention when writing decimals: use a period, not a comma.
 
 
 Introduce yourself
@@ -53,8 +49,8 @@ Introduce yourself
 Strings
 -------
 
-Numbers, however, are not enough to communicate effectively. So we need to learn how to use ``strings``
-.
+Numbers, however, are not enough to communicate effectively. So we need to learn how to use ``strings``.
+
 Here are some examples:
 
     >>> "Hello World"
@@ -78,14 +74,13 @@ or they can be multiplied by whole numbers:
 
 The string must always begin and end with the same character. This may be a single quote (``'``) or
 double quotes (``"``). It has no effect on the value of the string, i.e, typing ``"Batman"`` creates
-a string ``Batman`` - quotes are not a part of it, they only indicate that it is a string (
-unfortunately, Python is not so clever as to guess it by itself).
+a string ``Batman`` - quotes are not a part of it, they only indicate that it is a string.
 
 
 Printing the strings
 --------------------
 
-How do we present values in a readable form? We can do it by using the :func:`print` command:
+How do we present values in a readable form? We can do it by using the ``print`` command:
 
     >>> print("Hello World")
     Hello World
@@ -96,7 +91,7 @@ They will be separated by spaces:
     >>> print("Hi, my name is", "Łukasz")
     Hi, my name is Łukasz
 
-:func:`print` command has many more applications as it can write almost everything.
+``print`` command has many more applications as it can write almost everything.
 For now, the only other kind of values we know are numbers:
 
 
@@ -107,11 +102,19 @@ For now, the only other kind of values we know are numbers:
     >>> print("2 + 2 =", 2 + 2)
     2 + 2 = 4
 
-We are done with the interactive console for now. To exit it enter `quit()`::
+We are done with the interactive console for now. To exit it enter ``quit()``
 
     >>> quit()
 
 Or hold ``Ctrl+D`` (for Linux) or ``Ctrl+Z`` (for Windows).
+
+
+Exercise
+========
+
+Try to close first close and the open ``python`` console again.  
+
+
 
 Source files
 ============
@@ -124,10 +127,10 @@ Our first program will look like this::
 
     print("Hi, my name is Lucas")
 
-In order to write and save code in a file we need to use a text editor.
-Find a text editor that works on your OS (see `list of text editors on Wikipedia <http://en.wikipedia.org/wiki/List_of_text_editors>`_ for examples).
-We recomend PyCharm or Sublime. Sublime is writen in python :).
-Type the above Python code and save it in a new file called ``visitingcard.py``.
+In order to write and save code in a file we need to use a text editor. If you don't have a favourite editor try Atom by Github (https://atom.io/)
+It's open source and free.
+
+Open Editor create new file then type the above Python code and save it in a new file called ``visitingcard.py``.
 Then run your first Python program, from the command line, using the following.
 
 .. code-block:: sh
@@ -136,7 +139,7 @@ Then run your first Python program, from the command line, using the following.
     Hi, my name is Lucas
     (workshops) ~$
 
-A single program can contain more than one command. Each should be on a separate line. For example::
+A single program can contain more than one command. Each should be on a separate line. Edit the file to be::
 
     print("Hi,")
     print()
@@ -146,7 +149,7 @@ A single program can contain more than one command. Each should be on a separate
     print()
     print("Bye.")
 
-We can insert blank lines wherever we want in ``visitingcard.py`` file to increase its readability.
+We can insert as many blank lines wherever we want in ``visitingcard.py`` file to increase its readability.
 Here, we split the message header from the content and the end.
 
 
@@ -216,7 +219,7 @@ The result has not changed:
     Your BMI is: 21.387755102040817
 
 
-In order to better understand how names work, let’s go back to the interactive mode
+In order to better understand how names work, let’s go back to the interactive mode (``>>>``)
 for a while and give names to some values:
 
     >>> x = 42
@@ -318,15 +321,15 @@ use the other functions:
 
     >>> help(input)
     Help on function input in module builtins:
-    <BLANKLINE>
+
     input(...)
         input([prompt]) -> string
-    <BLANKLINE>
+
         Read a string from standard input.  The trailing newline is stripped.
         If the user hits EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), raise EOFError.
         On Unix, GNU readline is used if enabled.  The prompt string, if given,
         is printed without a trailing newline before reading.
-    <BLANKLINE>
+
 
 We will use :func:`input` to load data from the user. As we read in the description, :func:`input` reads the
 string:
@@ -339,7 +342,7 @@ string:
 
 
 Now you will learn what "calling a function" means. You can call a function using ``()``, which is
-an information for the interpreter to call a function. Calling a function will run a function. If you
+an information for Python to call a function. Calling a function will run a function. If you
 forget  to type ``()`` after the function name, the function is not called. In this situation,
 you will not get any informations about errors, because the command you typed is still correct.
 
@@ -349,9 +352,6 @@ we can use it the same way that we used strings before.
 
 For example, we can use ``input()`` to save a given string as a name:
 
-.. testsetup::
-
-    input.queue.append("Joanna")
 
 .. doctest::
 
@@ -363,10 +363,6 @@ For example, we can use ``input()`` to save a given string as a name:
     Your name is: Joanna
 
 Is that enough to improve our program?
-
-.. testsetup::
-
-    input.queue.append("60.5")
 
 .. doctest::
 
@@ -386,9 +382,9 @@ or to the string ``"60.5"``. Only we know that, so we have to include this infor
 
 Let’s introduce two more functions:
 
-    >>> help(int)  # doctest: +NORMALIZE_WHITESPACE
+    >>> help(int) 
     Help on class int in module builtins:
-    <BLANKLINE>
+
     class int(object)
      |  int(x=0) -> integer
      |  int(x, base=10) -> integer
@@ -403,7 +399,7 @@ and
 
     >>> help(float)  # doctest: +NORMALIZE_WHITESPACE
     Help on class float in module builtins:
-    <BLANKLINE>
+
     class float(object)
      |  float(x) -> floating point number
      |
@@ -483,14 +479,14 @@ and what data it expects from us (called the list of arguments).
 
 Entering just the name does not activate the function. It will tell us only that it is a function:
 
-    >>> input  # doctest: +SKIP
+    >>> input
     <built-in function input>
 
 .. We skip the test above because we can't mock input.__repr__ :(
 
 In order to call the function, we must put parentheses after its name:
 
-    >>> input()  # doctest: +SKIP
+    >>> input()
 
 Now Python will execute the function.
 
@@ -539,27 +535,7 @@ Exercises
 ==================
 
 
-1. Optimised BMI
------------------
-
-Write BMI calculation in ONE line (<79chars) :) Check out http://docs.python.org for more information about input().
-
-
-
-2. Pythagoras
---------------
-
-
-Write a calculator that providing the edges next to 90 degree angle in triangle will out put the third one using famous mathematics solution: A to the power of two plus B to the power of two equals C to the power of two :)
-Try to also do it in one line if You did the exercise 1. it should be really easy for You.
-
-
-3. YOLO calculator
----------------------
-
-Check out http://docs.python.org for information about eval(). Talk about how dangerous it can be.
-Write a text based input calculator with eval(). That will take for example '2+2*2' and output solution.
-Doing it in one line should be easy for You by this point ;)
+Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.
 
 
 Summary
@@ -568,8 +544,8 @@ Summary
 In this chapter we learned basics of Python syntax. We discovered how to print integers,
 floating-point numbers, strings and tuples.
 
-We learnt the function :func:`print`, that prints information for the user and the function
-:func:`input`, which reads it.
+We learnt the function ``print``, that prints information for the user and the function
+``input``, which reads it.
 
 We successfully created a program stored in a file and ran it. Our program asks the user to answer
 a few simple questions, performs calculations and presents results in the form which is useful for the
