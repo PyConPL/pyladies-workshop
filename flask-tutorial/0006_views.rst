@@ -16,7 +16,7 @@ returned from the cursor look a bit like dictionaries because we are using
 the :class:`sqlite3.Row` row factory.
 
 The view function will pass the entries to the ``show_entries.html``
-template and return the rendered one
+template and return the rendered one (put this code in flaskr.py):
 
 .. code:: python
 
