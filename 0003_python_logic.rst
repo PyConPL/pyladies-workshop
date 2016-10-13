@@ -26,8 +26,8 @@ Let us now talk about comparisons. Let's look at how they behave in a short math
     True
 
 The result of a comparison is always ``True`` or ``False``.
-Comparisons can be combined into more complex conditions by using the words :keyword:`and` and
-:keyword:`or`:
+Comparisons can be combined into more complex conditions by using the words ``and`` and
+``or``:
 
     >>> x = 5
     >>> x < 10
@@ -71,7 +71,7 @@ and connect the expressions with:
 Is same as == ?
 ----------------
 
-Lest make few test if 'is' is the same as '==':
+Lest make few test if ``is`` is the same as ``==``:
 
     >>> 1000 is 10**3
     >>> 1000 == 10**3
@@ -182,7 +182,7 @@ condition ``2 > 1``  turns out to be true. Let’s try to make Python print "OK"
     IndentationError: expected an indented block
 
 Unfortunately, we did not succeed. Python needs to know whether the instruction we have written is a
-continuation of :keyword:`if` or it is the next instruction not covered by the condition. To this
+continuation of ``if`` or it is the next instruction not covered by the condition. To this
 purpose, we need to indent our code:
 
     >>> if 2 > 1:
@@ -243,11 +243,11 @@ Actually, we could write our program just by using :keyword:`if` ::
     if bmi >= 25.0:
         print("overweight")
 
-We can also use :keyword:`else` and :keyword:`elif` to avoid repeating similar conditions and increase readability. In more complex programs it may not be obvious from
+We can also use ``else`` and ``elif`` to avoid repeating similar conditions and increase readability. In more complex programs it may not be obvious from
 the beginning that a certain condition is the opposite of the previous one.
 
 
-Using :keyword:`else` , we have the guarantee that the given instructions will be executed only if the instructions printed under :keyword:`if` haven’t been executed::
+Using ``else`` , we have the guarantee that the given instructions will be executed only if the instructions printed under ``if`` haven’t been executed::
 
     if bmi < 18.5:
         print("underweight")
@@ -261,10 +261,10 @@ Using :keyword:`else` , we have the guarantee that the given instructions will b
             # check it
             print("overweight")
 
-Pay particular attention to the indentations. Every use of :keyword:`else`,
+Pay particular attention to the indentations. Every use of ``else``,
 will cause an increased indentation of our code. It is very annoying when you have to check a few or a
 dozen or so conditions which exclude one another . Therefore the authors of Python added a little
-'improvement' in the form of :keyword:`elif`, instruction, which allows you to check another condition
+'improvement' in the form of ``elif``, instruction, which allows you to check another condition
 immediately::
 
 
@@ -281,6 +281,14 @@ immediately::
         # trolls can count only to three
         print("more")
 
+
+
+Exercises
+==================
+        
+Implement a program that takes three numbers for instance (a = 5 ,b = 1,c = 100), and prints the largest of the three (100)
+
+Happy Coding!
 
 Summary
 =======
