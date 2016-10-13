@@ -12,7 +12,7 @@ possible to drop the configuration directly into the module.  However, a cleaner
 solution is to create a separate ``.ini`` or ``.py`` file, load that, and
 import the values from there.
 
-Here are the import statements (in ``flaskr.py``)::
+Here are the import statements (in ``flaskr.py``)
 
 .. code:: python
           
