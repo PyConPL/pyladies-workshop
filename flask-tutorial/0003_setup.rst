@@ -23,7 +23,7 @@ Here are the import statements (in ``flaskr.py``)
          render_template, flash
 
 The next couple lines will create the actual application instance and
-initialize it with the config from the same file in ``flaskr.py`:
+initialize it with the config from the same file in ``flaskr.py``
 
 .. code:: python
 

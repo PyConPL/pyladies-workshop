@@ -7,10 +7,10 @@ username and password against the ones from the configuration and sets the
 key is set to ``True``, and the user is redirected back to the `show_entries`
 page.  In addition, a message is flashed that informs the user that he or
 she was logged in successfully.  If an error occurred, the template is
-notified about that, and the user is asked again::
+notified about that, and the user is asked again
 
 .. code:: python
-          
+
     @app.route('/login', methods=['GET', 'POST'])
     def login():
         error = None
@@ -24,6 +24,7 @@ notified about that, and the user is asked again::
                 flash('You were logged in')
                 return redirect(url_for('show_entries'))
         return render_template('login.html', error=error)
+
 
 The `logout` function, on the other hand, removes that key from the session
 again.  There is a neat trick here: if you use the :meth:`~dict.pop` method
@@ -81,5 +82,3 @@ the user to login:
         </dl>
       </form>
     {% endblock %}
-
-Continue with :ref:`tutorial-css`.
