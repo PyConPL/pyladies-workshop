@@ -39,7 +39,7 @@ again.
         return redirect(url_for('show_entries'))
 
 
-extend layout.html
+Modify the file layout.html by adding the lines starting with "+" WITHOUT the "+" themselves (!!)
 -------------------
 
 .. sourcecode:: html+jinja
