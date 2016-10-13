@@ -54,16 +54,12 @@ The Templates
 Now it is time to start working on the templates.  As you may have
 noticed, if you make requests with the app running, you will get
 an exception that Flask cannot find the templates.  The templates
-are using `Jinja2`_ syntax and have autoescaping enabled by
-default.  This means that unless you mark a value in the code with
-:class:`~flask.Markup` or with the ``|safe`` filter in the template,
-Jinja2 will ensure that special characters such as ``<`` or ``>`` are
-escaped with their XML equivalents.
+are using `Jinja2`_ syntax.
 
 We are also using template inheritance which makes it possible to reuse
 the layout of the website in all pages.
 
-Put the following templates into the :file:`templates` folder:
+Put the following templates into the ``templates`` folder:
 
 .. _Jinja2: http://jinja.pocoo.org/docs/templates
 
@@ -104,7 +100,7 @@ the session:
 show_entries.html
 -----------------
 
-This template extends the :file:`layout.html` template from above to display the
+This template extends the ``layout.html`` template from above to display the
 messages.  Note that the ``for`` loop iterates over the messages we passed
 in with the :func:`~flask.render_template` function.  Notice that the form is
 configured to to submit to the `add_entry` view function and use ``POST`` as
