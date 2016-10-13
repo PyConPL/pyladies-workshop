@@ -281,7 +281,7 @@ Create the best solution.
 
 2. Dictionary methods
 
-Try out: .get(key), .has_key(key), .items(), .keys(), .update(dict_2), .values()
+Try out: .get(key), .has_key(key) (doesn't exist in Python 3.5 - use ``in`` instead), .items(), .keys(), .update(dict_2), .values()
 
 Option a) Find out the difference between a_dict[key] and a_dict.get(key)
 
