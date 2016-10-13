@@ -237,11 +237,11 @@ In Python You can create nested objects like:
                     'mice',
                     'rabbits',
                     'rats',
-                ]
+                ],
                 'environment': {
                     'temp': 25,
                     'humidity': 80,
-                }
+                },
                 'location': 'cage',
             },
             'cute_little_rabbit': {
@@ -249,17 +249,18 @@ In Python You can create nested objects like:
                     'carrots',
                     'carrots',
                     'carrots',
-                ]
+                ],
                 'environment': {
                     'temp': 20,
                     'humidity': 35,
-                }
+                },
                 'location': 'run free',
             },
         'contact': {
-            'telphone': 0 700 800 900,
+            'telephone': '0 700 800 900',
             'email': 'zoo@zoo.zoo'
-        }
+            }
+          }
     }
 
 As You can see there can be a dict or a list inside of a dict of dicts :)
