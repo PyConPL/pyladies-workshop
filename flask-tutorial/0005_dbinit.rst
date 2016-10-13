@@ -12,7 +12,7 @@ that schema.
 To do this, you can create a function and hook it into a :command:`flask`
 command that initializes the database.  For now just take a look at the
 code segment below.  A good place to add this function, and command, is
-just below the `connect_db` function in :file:`flaskr.py`::
+just below the `connect_db` function in ``flaskr.py``
 
 .. code:: python  
 
