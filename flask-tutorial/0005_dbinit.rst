@@ -37,8 +37,9 @@ and the database connection is released.
 
 Now, it is possible to create a database with the :command:`flask` script::
 
+.. code:: bash
+          
     flask initdb
-    Initialized the database.
 
 .. admonition:: Troubleshooting
 

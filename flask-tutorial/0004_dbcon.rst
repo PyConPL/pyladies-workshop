@@ -70,8 +70,5 @@ happen because of two reasons: either everything went well (the error
 parameter will be ``None``) or an exception happened, in which case the error
 is passed to the teardown function.
 
-Curious about what these contexts mean?  Have a look at the
-``app-context`` documentation to learn more.
-
 .. _example source:
    https://github.com/pallets/flask/tree/master/examples/flaskr/
