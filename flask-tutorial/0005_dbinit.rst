@@ -35,7 +35,7 @@ Within the function, you can then access :attr:`flask.g` and other things as
 you might expect.  When the script ends, the application context tears down
 and the database connection is released.
 
-Now, it is possible to create a database with the ``flask`` script
+Now, it is possible to create a database with the ``flask`` script - run this command in your console:
 
 .. code:: bash
           
