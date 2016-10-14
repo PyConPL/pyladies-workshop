@@ -7,6 +7,7 @@ Will add a method that allows for easy connections to the
 specified database.  This can be used to open a connection on request and
 also from the interactive Python shell or a script.  This will come in
 handy later.
+You'll be adding the code to your ``flaskr.py`` file.
 
 .. code:: python
 
