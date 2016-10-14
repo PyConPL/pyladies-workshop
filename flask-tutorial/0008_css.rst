@@ -27,3 +27,5 @@ application.  Just create a stylesheet called :file:`style.css` in the
     .flash          { background: #cee5F5; padding: 0.5em;
                       border: 1px solid #aacbe2; }
     .error          { background: #f0d6d6; padding: 0.5em; }
+
+You can use CSS to customize the style of your application. Learn more about CSS here: http://www.w3schools.com/css/.
