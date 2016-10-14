@@ -1,10 +1,8 @@
-g.. _tutorial-introduction:
 
 Introducing Flaskr
 ==================
 
-This tutorial will demonstrate a blogging application named Flaskr, but feel
-free to choose your own less Web-2.0-ish name ;)  Essentially, it will do the
+This tutorial will demonstrate a blogging application named ``flaskr``.  Essentially, it will do the
 following things:
 
 1. Let the user sign in and out with credentials specified in the
