@@ -55,8 +55,8 @@ Modify the file layout.html by adding the lines starting with "+" WITHOUT the "+
  +        <a href="{{ url_for('logout') }}">log out</a>		
  +      {% endif %}		
  +      </div>		
-        {% for message in get_flashed_messages() %}		        {% for message in get_flashed_messages() %}
-          <div class=flash>{{ message }}</div>		          <div class=flash>{{ message }}</div>
+        {% for message in get_flashed_messages() %}		       
+          <div class=flash>{{ message }}</div>		          
         {% endfor %}
 
 login.html
