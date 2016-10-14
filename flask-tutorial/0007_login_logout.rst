@@ -39,14 +39,41 @@ again.
         return redirect(url_for('show_entries'))
 
 
-Modify the file layout.html by adding the lines starting with "+" WITHOUT the "+" themselves (!!)
+Modify the file show_entries.html by adding the lines starting with "+" WITHOUT the "+" themselves (!!)
 -------------------
+
+{% extends "layout.html" %}
+{% block body %}
++  {% if session.logged_in %}
++    <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
++      <dl>
++        <dt>Title:
++        <dd><input type=text size=30 name=title>
++        <dt>Text:
++        <dd><textarea name=text rows=5 cols=40></textarea>
++        <dd><input type=submit value=Share>
++      </dl>
++    </form>
++  {% endif %}
+  <ul class=entries>
+  {% for entry in entries %}
+    <li><h2>{{ entry.title }}</h2>{{ entry.text|safe }}
+  {% else %}
+    <li><em>Unbelievable.  No entries here so far</em>
+  {% endfor %}
+  </ul>
+{% endblock %}
+
+ Modify the file show_entries.html by adding the lines starting with "+" WITHOUT the "+" themselves (!!)
+-------------------
+
 
 .. sourcecode:: html+jinja
                 
      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-      <div class=page>		     
-        <h1>Flaskr</h1>		        
+     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+      <div class=page>		      <div class=page>
+        <h1>Flaskr</h1>		        <h1>Flaskr</h1>
  +      <div class=metanav>		
  +      {% if not session.logged_in %}		
  +        <a href="{{ url_for('login') }}">log in</a>		
@@ -54,9 +81,10 @@ Modify the file layout.html by adding the lines starting with "+" WITHOUT the "+
  +        <a href="{{ url_for('logout') }}">log out</a>		
  +      {% endif %}		
  +      </div>		
-        {% for message in get_flashed_messages() %}		       
-          <div class=flash>{{ message }}</div>		          
+        {% for message in get_flashed_messages() %}		        {% for message in get_flashed_messages() %}
+          <div class=flash>{{ message }}</div>		          <div class=flash>{{ message }}</div>
         {% endfor %}
+        
 
 login.html
 ----------
