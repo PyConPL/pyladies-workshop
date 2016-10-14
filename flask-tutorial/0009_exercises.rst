@@ -8,7 +8,7 @@ exercises
    
 3) Create a new route (a new function in ``flaskr.py``) "/funny-cat" which points to funny-cat.html template (there is no need to connect to database here). Create basic HTML with a picture of a funny cat in the middle of the page (from here_)! Make sure that about extends ``layout.html``. 
       
-4) Modify ``flaskr`` by introducing 'delete' feature. User should be able to remove an entry, but only if he/she is logged in. Next to each entry there should be a link to the page which deletes an entry. This link should be visible only if user is logged in. This link should point to a route which opens a view: ``delete``. This view should check if user is logged in, and if so, it should remove an entry by running the following code
+4) Modify ``flaskr`` by introducing 'delete' feature. User should be able to remove an entry, but only if he/she is logged in. Next to each entry there should be a link to the page which deletes an entry. This link should be visible only if user is logged in. This link should point to a route which opens a view: ``delete``. This view should check if user is logged in, and if so, it should remove an entry by running the following code:
 
 .. code:: python
 
