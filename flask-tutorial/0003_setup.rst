@@ -52,7 +52,15 @@ With that out of the way, you should be able to start up the application without
     export FLASK_DEBUG=1
     flask run
 
-(In case you are on Windows you need to use set instead of export). The FLASK_DEBUG flag enables or disables the interactive debugger. Never leave debug mode activated in a production system, because it will allow users to execute code on the server!
+
+for Windows:
+.. code:: bash
+
+    set FLASK_APP=flaskr.py
+    set FLASK_DEBUG=1
+    python -m flask run
+
+The FLASK_DEBUG flag enables or disables the interactive debugger. Never leave debug mode activated in a production system, because it will allow users to execute code on the server!
 
 You will see a message telling you that server has started along with the address at which you can access it.
 
