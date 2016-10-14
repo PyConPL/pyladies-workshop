@@ -23,6 +23,7 @@ one of the popular NoSQL databases if your data is more suited for those.
 
 Activate Virtualenv
 ===================
+Remember you need to be in the directory where we created the virtual env yesterday.
 
 .. code-block:: bat
 
@@ -38,5 +39,7 @@ Activate Virtualenv
 Flask: Instalation and preparaion
 =================================
 
-$ pip install flask
+.. code-block:: sh
+
+   $ pip install flask
 
