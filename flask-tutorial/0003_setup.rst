@@ -54,11 +54,11 @@ With that out of the way, you should be able to start up the application without
 
 
 for Windows:
-.. code:: bash
 
-    set FLASK_APP=flaskr.py
-    set FLASK_DEBUG=1
-    python -m flask run
+.. code:: bash
+          set FLASK_APP=flaskr.py
+          set FLASK_DEBUG=1
+          python -m flask run
 
 The FLASK_DEBUG flag enables or disables the interactive debugger. Never leave debug mode activated in a production system, because it will allow users to execute code on the server!
 
