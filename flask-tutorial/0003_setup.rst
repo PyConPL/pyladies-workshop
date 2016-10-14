@@ -44,7 +44,7 @@ Choose that key wisely and as hard to guess and complex as possible.
 
 In the next section you will see how to run the application.
 
-With that out of the way, you should be able to start up the application without problems. Do this with the following commands:
+With that out of the way, you should be able to start up the application without problems. Do this with the following commands in the console (you need to be in your flaskr directory):
 
 .. code:: bash
           
