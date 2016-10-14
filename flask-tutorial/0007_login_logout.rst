@@ -45,7 +45,6 @@ Modify the file layout.html by adding the lines starting with "+" WITHOUT the "+
 .. sourcecode:: html+jinja
                 
      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
       <div class=page>		     
         <h1>Flaskr</h1>		        
  +      <div class=metanav>		
