@@ -39,7 +39,7 @@ Now, it is possible to create a database with the ``flask`` script - run this co
 
 .. code:: bash
           
-    flask initdb
+    python -m flask initdb
 
 .. admonition:: Troubleshooting
 
