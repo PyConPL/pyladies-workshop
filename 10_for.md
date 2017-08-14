@@ -132,7 +132,7 @@ for liczba in range(10, 20):
 ```
 
 W powyższym przykładzie wypisujemy liczby całkowite od 10 do 19.  Liczba,
-którą podaliśmy jako koniec przedziału nie jest w nim uwzględniona.
+którą podaliśmy jako koniec przedziału, nie jest w nim uwzględniona.
 
 Co ciekawe, możemy podać tylko jeden argument, który wtedy jest traktowany
 jako koniec przedziału, zaś za początek przyjmuje się liczbę 0.  Kolejny
