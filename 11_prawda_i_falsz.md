@@ -5,7 +5,7 @@ W tym rozdziale:
 * poznasz pojęcia "prawda" i "fałsz" oraz ich reprezentację w Pythonie:
 `True` i `False`,
 * poznasz **instrukcję warunkową** `if`, która pozwala zmienić przebieg
-programu jeżeli określony warunek zostanie spełniony.
+programu, jeżeli określony warunek zostanie spełniony.
 
 
 ## Prawda, fałsz i warunek
