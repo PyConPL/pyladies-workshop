@@ -51,11 +51,44 @@ Temperatura: 24 stopnie Celsjusza
 tekst `Masz X lat`, gdzie `X` to wiek w roku 2017, oraz zwraca ten wiek.
 
 
+## Formatowanie stringów
+
+W tym miejscu warto wrócić do stringów i opowiedzieć o jeszcze jednej,
+bardzo przydatnej metodzie: `format`.  Służy ona do **formatowania
+stringów**, czyli "wstawiania" do nich wartości zmiennych.  Spójrz na
+poniższy przykład:
+
+```python
+>>> 'ala {} kota'.format('ma')
+'ala ma kota'
+```
+
+Jak widzisz, wywołanie metody `format` spowodowało, że para znaków `{}`
+została zastąpiona argumentami funkcji.  W podobny sposób możemy wstawić
+dowolną liczbę i typ obiektów:
+
+```python
+>>> szerokosc = 110
+>>> wysokosc = 50.5
+>>> jednostka = 'mm'
+>>> '{}x{} {}'.format(szerokosc, wysokosc, jednostka)
+'110x50.5 mm'
+```
+
+Możliwości metody `format` nie kończą się na zwykłym wstawianiu wartości
+do stringa.  [Dokumentacja Pythona](https://docs.python.org/3.6/library/string.html#formatspec)
+w szczegółach opisuje tę funkcję.  Warto przyjrzeć się choćby przykładom,
+które tam zamieszczono.
+
+:snake: Zobacz co się stanie, jeżeli liczba argumentów metody `format`
+będzie __mniejsza__ niż liczba wystąpień `{}` w stringu.
+
+
 ## :pushpin: Podsumowanie
 
 W tym rozdziale:
 
-* poznaliśmy funkcję `print`.
+* poznaliśmy funkcję `print` oraz metodę `format`.
 
 ---
 
