@@ -51,7 +51,7 @@ dzięki temu sami możemy teraz na nie odpowiadać.
 
 ## Spis treści
 
-1. [Interpreter](./01_interpreter.md)
+1. [Tryb interaktywny](./01_tryb_interaktywny.md)
 2. [Tekst](./02_tekst.md)
 3. [Funkcja `help`](./03_help.md)
 4. [Liczby](./04_liczby.md)
@@ -61,6 +61,11 @@ dzięki temu sami możemy teraz na nie odpowiadać.
 8. [Funkcja `print`](./08_funkcja_print.md)
 9. [Listy](./09_listy.md)
 10. [Pętla `for`](./10_for.md)
-11. [Prawda i fałsz](./11_prawda_i_falsz.md)
-12. [Słowniki](./12_slowniki.md)
+11. [Krotki](./11_krotki.md)
+12. [Prawda i fałsz](./12_prawda_i_falsz.md)
+13. [Słowniki](./13_slowniki.md)
+14. [`None`](./14_none.md)
+15. [Pętla `while`](./15_petla_while.md)
+16. [Biblioteka standardowa](./16_biblioteka_standardowa.md)
+17. [Podsumowanie](./17_podsumowanie.md)
 

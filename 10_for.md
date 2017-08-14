@@ -88,10 +88,18 @@ jego literę wraz z liczbą wystąpień tej litery w stringu (użyj metody
 `count`).
 
 
-## Metoda `split`
+### Metoda `split`
 
-String posiada metodę `split`, która rodziela go w miejscach wystąpienia
-danego znaku i zwraca listę stringów, które powstały w ten sposób:
+Możemy również iterować po słowach.  Służy do tego metoda `split`:
+
+```python
+for slowo in 'ala ma kota':
+    print(slowo)
+```
+
+Tak na prawdę metoda `split` ma dużo szersze zastosowanie.  Jeżeli
+podamy jej jako argument jakiś znak, wtedy string zostanie podzielony
+w miejscach występowania tego znaku:
 
 ```python
 >>> s = '2015,2016,2017'
@@ -111,6 +119,34 @@ w miejscach spacji:
 wszystkie jego słowa, każde w osobnej linijce.
 
 
+## `range`
+
+W tym miejscu warto wspomnieć o funkcji wbudowanej `range`.  Przyjmuje
+ona jako argumenty dwa integery: początek i koniec przedziału liczbowego,
+który zwraca.  Możemy następnie iterować po takim przedziale i wówczas
+elementami będą kolejne liczby całkowite:
+
+```python
+for liczba in range(10, 20):
+    print(liczba)
+```
+
+W powyższym przykładzie wypisujemy liczby całkowite od 10 do 19.  Liczba,
+którą podaliśmy jako koniec przedziału nie jest w nim uwzględniona.
+
+Co ciekawe, możemy podać tylko jeden argument, który wtedy jest traktowany
+jako koniec przedziału, zaś za początek przyjmuje się liczbę 0.  Kolejny
+przykład pokazuje jak wypisać liczby od 0 do 99:
+
+```python
+for liczba in range(100):
+    print(liczba)
+```
+
+:snake: Napisz funkcję, która przyjmie jeden argument o nazwie `limit`
+i zwróci listę wartości od 0 do `limit` podniesionych do kwadratu.
+
+
 ## :pushpin: Podsumowanie
 
 W tym rozdziale:
@@ -118,9 +154,10 @@ W tym rozdziale:
 * poznaliśmy pojęcia *iteracja* oraz *pętla*,
 * nauczyliśmy się korzystać w pętli `for`,
 * dowiedzieliśmy się, że pętla `for` działa także na stringach, oraz że
-stringi posiadają metodę `split`.
+stringi posiadają metodę `split`,
+* poznaliśmy funkcję wbudowaną `range`.
 
 
 ---
 
-:checkered_flag: Następny rozdział: [Prawda i fałsz](./11_prawda_i_falsz.md) :checkered_flag:
+:checkered_flag: Następny rozdział: [Krotki](./11_krotki.md) :checkered_flag:

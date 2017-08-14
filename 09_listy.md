@@ -252,6 +252,65 @@ a następnie zwróci jej ostatni element.  (W ten sposób otrzymamy własną
 wersję funkcji `max`!)
 
 
+## Wycinki list
+
+Czasami operując na liście chcielibyśmy używać tylko jej fragmentu, np.
+10 pierwszych elementów, albo elementy od drugiego do piątego.  Python
+jest przygotowany na taką sytuację: umożliwia utworzenie *wycinka*
+listy (ang. *slice*).  Aby stworzyć wycinek należy wpisać nazwę listy,
+a następnie w nawiasach kwadratowych indeksy pierwszego i ostatniego
+wycinka elementu odzielone dwukropkiem.
+
+Przykładowo, zwrócenie fragmentu listy od drugiego do czwartego elementu
+będzie wyglądało tak:
+
+```python
+>>> l = [1, 2, 3, 4, 5, 6, 7]
+>>> l[1:4]
+[2, 3, 4]
+```
+
+Pamiętaj, że indeksy listy zaczynając się od zera, a element o indeksie
+końcowym (w tym wypadku: `5`) nie zostanie dołączony do wycinka.
+
+Możemy też pominąć indeks początkowy.  W takim wypadku Python zwróci
+wszystkie elementy od początku:
+
+```python
+>>> l[:5]
+[1, 2, 3, 4, 5]
+```
+
+Jeżeli pominiemy indeks końcowy, dostaniemy wszystkie elementy do końca
+listy:
+
+```python
+>>> l[2:]
+[3, 4, 5, 6, 7]
+```
+
+Jeżeli indeks końcowy będzie liczbą ujemną, to pozycja ostatniego elementu
+wycinka będzie liczona od końca listy:
+
+```python
+>>> l[:-1]
+[1, 2, 3, 4, 5, 6]
+>>> l[:-2]
+[1, 2, 3, 4, 5]
+```
+
+Co ciekawe, wycinki możemy tworzyć również ze stringów:
+
+```python
+>>> s = 'ala ma kota'
+>>> s[2:8]
+'a ma k'
+```
+
+:snake: Zobacz co się stanie, jeżeli indeks początkowy będzie liczbą
+ujemną, lub jeżeli indeks końcowy będzie większy niż długość listy.
+
+
 ## :pushpin: Podsumowanie
 
 W tym rozdziale:
