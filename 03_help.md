@@ -33,9 +33,15 @@ find(...)
     Return -1 on failure.
 ```
 
-Dokumentacja pokazuje wszystkie argumenty jakie przyjmuje dana metoda,
-informuje jakiego typu wynik jest zwracany oraz w skrócie wyjaśnia co
-ta metoda robi.  Dzięki temu możemy ją sobie bardzo szybko przypomnieć.
+Czytanie dokumentacji nie jest łatwe, ale nie zrażaj się. Warto oswajać się
+z nią od samego początku. Przeczytaj fragment powyżej jeszcze raz, a zaraz
+pomożemy zrozumieć Ci sens tego fragmentu.
+
+Dokumentacja pokazuje wszystkie argumenty jakie przyjmuje dana metoda.
+Tę informację zawiera linia "S.find(sub [,start [,end]])".
+Dalej dokumentacja informuje jakiego typu wynik jest zwracany oraz w skrócie
+wyjaśnia co ta metoda robi.  Dzięki temu możemy ją sobie bardzo szybko
+przypomnieć.
 
 Zwróć uwagę, że w tym przykładzie nie otworzyliśmy nawiasu przy nazwie
 metody `find`, a co za tym idzie, nie podaliśmy jej żadnych argumentów.
