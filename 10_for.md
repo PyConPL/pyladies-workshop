@@ -97,7 +97,7 @@ for slowo in 'ala ma kota'.split():
     print(slowo)
 ```
 
-Tak na prawdę metoda `split` ma dużo szersze zastosowanie.  Jeżeli
+Tak naprawdę metoda `split` ma dużo szersze zastosowanie.  Jeżeli
 podamy jej jako argument jakiś znak, wtedy string zostanie podzielony
 w miejscach występowania tego znaku:
 
