@@ -93,7 +93,7 @@ jego literę wraz z liczbą wystąpień tej litery w stringu (użyj metody
 Możemy również iterować po słowach.  Służy do tego metoda `split`:
 
 ```python
-for slowo in 'ala ma kota':
+for slowo in 'ala ma kota'.split():
     print(slowo)
 ```
 
