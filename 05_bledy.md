@@ -10,11 +10,11 @@ W tym rozdziale:
 Tworząc programy nigdy nie jesteśmy w stanie przewidzieć wszystkich
 sytuacji jakie mogą się wydarzyć.  Czasami stanie się coś, czego się nie
 spodziewaliśmy, a czasami po prostu użyjemy języka w nieprawidłowy sposób.
-Na każdą taką sytuację Python zareaguje zgłaszając błąd lub wyjątek. Międy tymi
-pojęciami jest różnica, ale nie musimy ich na razie rozróżniać.
+Na każdą taką sytuację Python zareaguje zgłaszając błąd lub wyjątek. Między
+tymi pojęciami jest różnica, ale nie musimy ich na razie rozróżniać.
 
-Kiedy Python natrafi na taką sytuację, przewie działanie programu i wyświetli
-nam komuniat, dzięki któremu dowiemy się na czym polegała nasza pomyłka
+Kiedy Python natrafi na taką sytuację, przerwie działanie programu i wyświetli
+nam komunikat, dzięki któremu dowiemy się na czym polegała nasza pomyłka
 i będziemy mogli poprawić kod programu, żeby uniknąć tego samego problemu
 w przyszłości.
 
@@ -36,10 +36,10 @@ i nauczysz się przewidywać jakie operacje mogą skutkować rzuceniem wyjątku.
 ## Jak czytać komunikaty o błędach i wyjątkach
 
 Spróbujmy wywołać błąd i zobaczyć jak zachowa się nasz program.
-Pamiętasz jak informowaliśmy o tym, że stringi wstawiamy w pojedyńczy lub
+Pamiętasz, jak informowaliśmy o tym, że stringi wstawiamy w pojedyńczy lub
 podwójny cudzysłów, ale musisz pamiętać, żeby cudzysłów zamykający był taki
-sam jak otwierający? Zróbmy eksperyment i sprawdzmy, co stanie się, kiedy
-kiedy złamiemy tę zasadę.
+sam jak otwierający? Zróbmy eksperyment i sprawdzmy, co się stanie, kiedy
+złamiemy tę zasadę.
 
 ```python
 >>> 'ala ma kota"
