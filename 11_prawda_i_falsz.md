@@ -1,4 +1,4 @@
-# Rozdział 11. Prawda i fałsz
+# Rozdział 12. Prawda i fałsz
 
 W tym rozdziale:
 
@@ -59,7 +59,6 @@ drugiej:
 True
 >>> 70 > 100
 False
->>> 
 ```
 
 Operatory `>` i `<` można mieszać z `=`, w ten sposób tworząc warunek
@@ -140,8 +139,8 @@ False
 
 Sprawdzanie czy jakieś wyrażenie jest prawdziwe nie miałoby żadnego sensu
 gdybyśmy nie mogli w jakiś sposób na tej podstawie podjąć decyzji
-o przebiegu naszego programu.  W tym celu używamy **instrukcji warunkowej**
-`if`:
+o dalszym przebiegu naszego programu.  W tym celu używamy **instrukcji
+warunkowej** `if`:
 
 ```python
 if temperatura > 30.0:
@@ -149,9 +148,9 @@ if temperatura > 30.0:
 ```
 
 Struktura tej instrukcji jest bardzo prosta: po słowie `if` wpisujemy
-warunek, następnie dwukropek i w kolejnych liniach, po wciąciu, instrukcje,
+warunek, następnie dwukropek i w kolejnych liniach, po wcięciu, instrukcje,
 które zostaną wykonane jeżeli warunek będzie prawdziwy (mówimy: jeżeli
-zostanie spełniony).
+warunek zostanie spełniony).
 
 :snake: Napisz funkcję, która przyjmuje argumenty `element` i `lista`
 i jeżeli dany element znajduje się na liście, to zwraca jego pozycję
@@ -222,6 +221,41 @@ if produkt == 'sok' or produkt == 'herbata'
 Operatory `or` i `and` można łączyć w jednym wyrażeniu.
 
 
+## Prawdziwość obiektów, funkcja `bool`
+
+Warunek nie musi być porównaniem.  Każdy typ obiektu w jakiś sposób
+definiuje prawdziwość.  Na przykład pusta lista to fałsz, a lista z co
+najmniej jednym jednym elementem to prawda.
+
+Aby przekonać się jaką wartość w rozumieniu logiki reprezentuje dany
+obiekt, możemy posłużyć się funkcją zbudowaną `bool`.  Przyjmuje ona jeden
+argument - dowolny obiekt - i zwraca jego wartość logiczną: `True` lub
+`False`.
+
+```python
+>>> bool([])
+False
+>>> bool([1, 2, 3])
+True
+```
+
+:snake: Dla każdego z następujących typów odszukaj wartość, dla której
+funkcja `bool` zwróci `True` i taką dla której zwróci `False`: string,
+krotka, integer, float.
+
+Ponieważ każdy obiekt można rozważać w kategorii "prawdziwości", każdym
+obiektem możemy posłużyć się w instrukcji `if`:
+
+```python
+if imie and nazwisko and len(haslo) > 5:
+    print('Podano prawidłowe dane')
+```
+
+:snake: Napisz funkcję, która jako argument przyjmie listę i zwróci `True`
+jeżeli wszystkie elementy na tej liście są prawdziwe, albo `False` jeżeli
+przynajmniej jeden element nie jest prawdziwy.
+
+
 ## :pushpin: Podsumowanie
 
 W tym rozdziale:
@@ -233,5 +267,5 @@ określone wyrażenie jest prawdziwe.
 
 ---
 
-:checkered_flag: Następny rozdział: [Słowniki](./12_slowniki.md) :checkered_flag:
+:checkered_flag: Następny rozdział: [Słowniki](./13_slowniki.md) :checkered_flag:
 
