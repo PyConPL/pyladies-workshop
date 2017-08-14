@@ -44,7 +44,7 @@ Liczby możemy dodawać i odejmować:
 13254776280841401
 ```
 
-...albo sprawdzić resztę z dzielenia:
+...albo sprawdzić resztę z dzielenia (ang. modulo):
 
 ```python
 >>> 20 % 17
@@ -123,9 +123,9 @@ z najniższym.
 
 Operatory | Znaczenie
 --------- | ---------
-`+`, `-`  | Dodawanie, odejmowanie
-`*`, `/`, `//`, `%` | Mnożenie, dzielenie, dzielenie całkowite, modulo
 `**` | Potęgowanie
+`*`, `/`, `//`, `%` | Mnożenie, dzielenie, dzielenie całkowite, modulo
+`+`, `-`  | Dodawanie, odejmowanie
 
 ## :pushpin: Podsumowanie
 

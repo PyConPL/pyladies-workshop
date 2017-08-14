@@ -35,7 +35,7 @@ find(...)
 
 Czytanie dokumentacji nie jest łatwe, ale nie zrażaj się. Warto oswajać się
 z nią od samego początku. Przeczytaj fragment powyżej jeszcze raz, a zaraz
-pomożemy zrozumieć Ci sens tego fragmentu.
+udzielimy Ci kilku wskazówek, jak czytać dokumentację.
 
 Dokumentacja pokazuje wszystkie argumenty jakie przyjmuje dana metoda.
 Tę informację zawiera linia "S.find(sub [,start [,end]])".
