@@ -57,7 +57,7 @@ Przeczytajmy go linijka po linijce.
 `Traceback (most recent call last):`.  Słowem "Traceback" określa się listę
 operacji, których wykonanie spowodowało błąd.  W tym przypadku wykonana
 została tylko jedna operacja (zwrócenie wpisanej frazy), ale w przyszłości
-spotkasz się z sytuacjami, w których wyjątek czy błąd został rzucony w skutek
+spotkasz się z sytuacjami, w których wyjątek czy błąd został rzucony wskutek
 wykonania całego ciągu poleceń.  Python zawsze pokazuje cały traceback, aby
 programista mógł zrozumieć co poszło nie tak.  Zdanie `most recent call last`
 informuje, że ostatnia operacja na liście została wykonana najpóźniej
@@ -69,7 +69,7 @@ w którym wystąpił błąd.
 przyczynę błędu.  Zaczyna się od typu wyjątku.  W tym przypadku to
 `SyntaxError` - błąd składni.  Typ błędu można rozumieć jako kategorię: nie
 mówi on czego dokładnie dotyczył błąd, ale pozwala zaklasyfikować różne
-wyjątki, aby łatwiej byłe je zrozumieć.  `SyntaxError` oznacza błąd w składni
+wyjątki, aby łatwiej było je zrozumieć.  `SyntaxError` oznacza błąd w składni
 ciągu znaków, które powinny po sobie następować zgodnie ze składnią języka.
 Rozszyfrujmy jeszcze skrót EOL - end of line, koniec linii. Po takim
 komunikacie wiemy trochę bardziej, któremu fragmentowi naszego kodu się
