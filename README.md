@@ -69,3 +69,11 @@ dzięki temu sami możemy teraz na nie odpowiadać.
 16. [Biblioteka standardowa](./16_biblioteka_standardowa.md)
 17. [Podsumowanie](./17_podsumowanie.md)
 
+
+## Dodatki
+
+1. [Instalacja Pythona](./d01_instalacja_pythona.md)
+2. [Moduły](./d02_moduly.md)
+2. [Funkcja `input`](./d03_input.md)
+4. [Operacje na plikach](./d04_pliki.md)
+
