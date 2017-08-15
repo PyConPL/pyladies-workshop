@@ -38,7 +38,7 @@ i nauczysz się przewidywać jakie operacje mogą skutkować rzuceniem wyjątku.
 Spróbujmy wywołać błąd i zobaczyć jak zachowa się nasz program.
 Pamiętasz, jak informowaliśmy o tym, że stringi wstawiamy w pojedyńczy lub
 podwójny cudzysłów, ale musisz pamiętać, żeby cudzysłów zamykający był taki
-sam jak otwierający? Zróbmy eksperyment i sprawdzmy, co się stanie, kiedy
+sam jak otwierający? Zróbmy eksperyment i sprawdźmy, co się stanie, kiedy
 złamiemy tę zasadę.
 
 ```python
@@ -72,7 +72,7 @@ mówi on czego dokładnie dotyczył błąd, ale pozwala zaklasyfikować różne
 wyjątki, aby łatwiej było je zrozumieć.  `SyntaxError` oznacza błąd w składni
 ciągu znaków, które powinny po sobie następować zgodnie ze składnią języka.
 Rozszyfrujmy jeszcze skrót EOL - end of line, koniec linii. Po takim
-komunikacie wiemy trochę bardziej, któremu fragmentowi naszego kodu się
+komunikacie wiemy trochę więcej na temat tego, któremu fragmentowi naszego kodu się
 dokładnie przyjrzeć. Odkrycie powodu, dlaczego nasz kod nie działa, wciąż może
 być niełatwą zagadką.
 
