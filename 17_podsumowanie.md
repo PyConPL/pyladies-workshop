@@ -1,17 +1,18 @@
 # Podsumowanie
 
-Dobiegamy do końca kursu, ale to jeszcze nie koniec warsztatów!  Mentorzy
-mają dla Ciebie jeszcze garść zadań.  Możesz też skorzystać z okazji
-i zadać mentorom tyle pytań na ile tylko starczy czasu - między innymi
-dlatego zorganizowaliśmy te warsztaty!
+Dobiegamy do końca kursu, ale to jeszcze nie koniec warsztatów!  Czekają
+na Ciebie jeszcze dodatkowe rozdziały - znajdziesz je w sekcji "Dodatki"
+pod spisem treści. Poza tym mentorzy mają dla Ciebie jeszcze garść zadań.
+Możesz też skorzystać z okazji i zadać mentorom tyle pytań na ile tylko
+starczy czasu - między innymi dlatego zorganizowaliśmy te warsztaty!
 
 
 ## O czym nie powiedzieliśmy
 
 Niestety czas na warsztaty jest organiczony, więc i zakres tematów jakie
 poruszyliśmy nie jest wyczerpujący.  Znasz już podstawy Pythona.  Możesz
-już samodzielnie pisać programy, a czytanie cudzych nie będzie już takie
-trudne.  Jednak na tym etapie często trafisz na kod, którego nie
+już samodzielnie pisać własne programy, a czytanie cudzych nie będzie już
+takie trudne.  Jednak na tym etapie często trafisz na kod, którego nie
 zrozumiesz.  A może już teraz wiesz o tematach, które wydają się
 interesujące, ale nie wiesz jak zacząć.  Dlatego przygotowaliśmy dla Ciebie
 listę zagadnień, którą możesz potraktować jako kontynuację tych warsztatów.
