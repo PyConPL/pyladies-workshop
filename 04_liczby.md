@@ -34,6 +34,13 @@ Liczby możemy dodawać i odejmować:
 >>> 20 * 17
 340
 >>> 20 / 17
+1.1764705882352942
+```
+
+...dzielić bez reszty:
+
+```python
+>>> 20 // 17
 1
 ```
 
