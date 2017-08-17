@@ -214,7 +214,7 @@ Gdybyśmy chcieli, żeby operacja została wykonana jeżeli przynajmniej jeden
 z kilku warunków zostanie spełniony, to należy użyć operatora `or`:
 
 ```python
-if produkt == 'sok' or produkt == 'herbata'
+if produkt == 'sok' or produkt == 'herbata':
     cena = 4.50
 ```
 
