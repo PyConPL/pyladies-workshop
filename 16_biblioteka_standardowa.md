@@ -11,7 +11,7 @@ W tym rozdziale:
 W programowaniu posługujemy się pojęciem **biblioteka**, które oznacza
 zbiór programów i narzędzi do ich budowania, które możemy wykrzystać
 pisząc własne programy.  Przykładem biblioteki może być zbiór funkcji
-metematycznych (np. trygonometrycznych), do których możemy odwołać się
+matematycznych (np. trygonometrycznych), do których możemy odwołać się
 w naszym kodzie zamiast definiować je samodzielnie.
 
 
