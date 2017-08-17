@@ -19,7 +19,7 @@ zaistniały jakieś szczególne okoliczności.
 
 Przykładem użycia `None` może być dzielenie przez 0.  Jak wiemy, taka
 operacja matematyczna jest niedozwolona.  Teraz wyobraźmy sobie, że piszemy
-funkję, która przyjmuje jako argumenty dwie liczby i zwraca wynik
+funkcję, która przyjmuje jako argumenty dwie liczby i zwraca wynik
 dzielenia jednej przez drugą.
 
 ```python
