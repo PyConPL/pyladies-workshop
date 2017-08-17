@@ -75,6 +75,7 @@ posłużyć się nawiasami okrągłymi:
 
 :snake: Spróbuj samodzielnie wykonać kilka działań arytmetycznych.
 
+
 ## Liczby rzeczywiste
 
 Wszystkie powyższe operacje możemy wykonywać również na liczbach rzeczywistych
@@ -91,23 +92,9 @@ Wszystkie powyższe operacje możemy wykonywać również na liczbach rzeczywist
 0.3333333333333333
 ```
 
-Zwróć uwagę, że wynik operacji będzie zawierał część dziesiętną, tylko jeżeli
-przynajmniej jeden z argumentów jest liczbą rzeczywistą. W przeciwnym wypadku
-część ułamkowa zostanie pominięta, a w rezultacie otrzymamy liczbę całkowitą:
-
-```python
->>> 5 / 2
-2
->>> 5 / 2.0
-2.5
->>> 5.0 / 2
-2.5
->>> 5.0 / 2.0
-2.5
-```
-
 :snake: Czy wiesz kiedy Python zwróci *float* a kiedy *integer*? Upewnij się,
 sprawdź różne kombinacje liczb i działań.
+
 
 ## Operatory i ich kolejność
 
