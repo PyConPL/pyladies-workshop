@@ -213,7 +213,7 @@ Dzięki temu możemy w prosty sposób tworzyć złożone struktury danych:
 
 Kiedy po raz pierwszy wspomnieliśmy o funkcji `len`, powiedzieliśmy, że
 służy ona do sprawdzania długości obiektów.  Każdy typ obiektu (string,
-lista, etc.) może inaczej rozumieć pojęcie długości.  W przypdku stringów
+lista, etc.) może inaczej rozumieć pojęcie długości.  W przypadku stringów
 chodzi o liczbę znaków, w przypadku list o liczbę elementów itd.
 Słowniki również mają swoją "długość": jest to liczba kluczy.
 
