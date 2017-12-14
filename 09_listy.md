@@ -33,8 +33,8 @@ oddzielone przecinkami w nawiasach kwadratowych:
 W taki sposób definiujemy pustą listę:
 
 ```python
->>> l = []
->>> print(l)
+>>> lista = []
+>>> print(lista)
 []
 ```
 
@@ -265,8 +265,8 @@ Przykładowo, zwrócenie fragmentu listy od drugiego do czwartego elementu
 będzie wyglądało tak:
 
 ```python
->>> l = [1, 2, 3, 4, 5, 6, 7]
->>> l[1:4]
+>>> lista = [1, 2, 3, 4, 5, 6, 7]
+>>> lista[1:4]
 [2, 3, 4]
 ```
 
@@ -277,7 +277,7 @@ Możemy też pominąć indeks początkowy.  W takim wypadku Python zwróci
 wszystkie elementy od początku:
 
 ```python
->>> l[:5]
+>>> lista[:5]
 [1, 2, 3, 4, 5]
 ```
 
@@ -285,7 +285,7 @@ Jeżeli pominiemy indeks końcowy, dostaniemy wszystkie elementy do końca
 listy:
 
 ```python
->>> l[2:]
+>>> lista[2:]
 [3, 4, 5, 6, 7]
 ```
 
@@ -293,17 +293,17 @@ Jeżeli indeks końcowy będzie liczbą ujemną, to pozycja ostatniego elementu
 wycinka będzie liczona od końca listy:
 
 ```python
->>> l[:-1]
+>>> lista[:-1]
 [1, 2, 3, 4, 5, 6]
->>> l[:-2]
+>>> lista[:-2]
 [1, 2, 3, 4, 5]
 ```
 
 Co ciekawe, wycinki możemy tworzyć również ze stringów:
 
 ```python
->>> s = 'ala ma kota'
->>> s[2:8]
+>>> tekst = 'ala ma kota'
+>>> tekst[2:8]
 'a ma k'
 ```
 

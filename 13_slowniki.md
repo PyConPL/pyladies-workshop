@@ -19,7 +19,8 @@ pod nimi kryją.
 Takie spojrzenie na otaczającą nas rzeczywistość jest bardzo wygodne,
 bo pozwala opisać złożone zjawiska w systematyczny, łatwy do zrozumienia
 sposób.  Dlatego też wiele języków programowania oferuje narzędzia do
-tworzenia tego typu struktur.  W przypadku Pythona są to **słowniki**.
+tworzenia tego typu struktur danych.  W przypadku Pythona
+są to **słowniki**.
 
 Słownik (*dictionary*, w skrócie *dict*), to zbiór **kluczy** oraz
 odpowiadających im **wartości**.  Nazwa "słownik" nie jest przypadkowa,
@@ -55,7 +56,7 @@ Klucze mogą być również liczbami:
 d = {15: 'Ala ma kota', 'Kot ma alę': 3.14}
 ```
 
-Słownik też może być elementem listy:
+Słownik może też być elementem listy:
 
 ```python
 l = [{'a': 1, 'b': 2}, 3, 4]
@@ -188,8 +189,8 @@ for litera, owoc, panstwo in lista:
     print(owoc)
 ```
 
-W naszym przypadku pierwszym elementem każdej sekwencji jest klucz,
-a drugim wartość dla tego klucza.
+Wracając do słowników, w naszym przypadku pierwszym elementem każdej
+sekwencji jest klucz, a drugim wartość dla tego klucza.
 
 :snake: Napisz funkcję, która przyjmie dwa argumenty, słownik oraz wartość
 i zwróci nazwę klucza, którego wartość jest równa wartości z argumentu.
@@ -215,7 +216,7 @@ Kiedy po raz pierwszy wspomnieliśmy o funkcji `len`, powiedzieliśmy, że
 służy ona do sprawdzania długości obiektów.  Każdy typ obiektu (string,
 lista, etc.) może inaczej rozumieć pojęcie długości.  W przypadku stringów
 chodzi o liczbę znaków, w przypadku list o liczbę elementów itd.
-Słowniki również mają swoją "długość": jest to liczba kluczy.
+Słowniki również mają swoją "długość": jest ona równa liczbie kluczy.
 
 ```python
 >>> print(auto)
@@ -231,7 +232,8 @@ Słownik jest bardzo uniwersalną strukturą danych, przez co ma wiele
 zastosowań:
 
 * reprezentacja obiektów i ich atrybutów (jak w powyższym przykładzie),
-* mapowanie jednych wartości na inne (jak w prawdziwym słowniku),
+* mapowanie jednych wartości na inne (jak w prawdziwym słowniku, gdzie
+mapujemy słowa z jednego języka na drugi),
 * przechowywanie wielu powiązanych ze sobą wartości w jednym miejscu
 (np. klucze to tytuły filmów, a wartości to ich reżyserowie).
 

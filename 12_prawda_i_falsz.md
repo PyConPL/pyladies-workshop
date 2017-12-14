@@ -13,7 +13,6 @@ programu, jeżeli określony warunek zostanie spełniony.
 Programy jakie dotąd pisaliśmy składały się z operacji, które Python
 wykonywał jedna po drugiej.  Gdy jedna instrukcja została pomyślnie
 zrealizowana, program przechodził do wykonania kolejnej.
-
 Pisząc kolejne programy szybko przekonasz się, że taki scenariusz nie
 zawsze będzie Ci odpowiadał, ponieważ często chcemy, żeby jakieś operacje
 zostały wykonane tylko gdy zostanie spełniony pewien warunek.
@@ -27,6 +26,12 @@ Wynikiem takiego sprawdzenia jest **prawda** lub **fałsz**.  Prawda oznacza
 sytuację w której warunek został spełniony.  Przeciwieństwem jest fałsz.
 Przykładowo wynikiem warunku "żyrafa to ptak" jest fałsz, a wynikiem dla
 "Ziemia nie jest płaska" jest prawda.
+
+Oczywiście w programach nie tworzy się tak abstrakcyjnych warunków.
+Zamiast tego będziemy porównywali wartości zmiennych, sprawdzali czy wynik
+jakiejś funkcji ma określoną wartość itd.  W tym rozdziale dowiesz się
+jak wykonywać takie operacje oraz jak pisać programy, które realizują
+różne instrukcje w zależności do tego czy jakiś warunek został spełniony.
 
 
 ## Warunki w Pythonie, `True` i `False`
@@ -61,7 +66,7 @@ True
 False
 ```
 
-Operatory `>` i `<` można mieszać z `=`, w ten sposób tworząc warunek
+Operatory `>` i `<` można łączyć z `=`, w ten sposób tworząc warunek
 "większy lub równy" i "mniejszy lub równy":
 
 ```python
@@ -90,16 +95,22 @@ True
 ```
 
 Oczywiście w każdym przypadku wartości wpisane wprost możemy zastąpić
-zmiennymi.
+zmiennymi, a wynik wyrażenia zachować.
+
+```python
+>>> temperatura = 26
+>>> jest_zimno = temperatura < 10
+>>> print(jest_zimno)
+False
+```
 
 
 ## Porównywanie stringów
 
-Znając matematykę intuicyjnie rozumiemy w jaki sposób Python porównuje
-ze sobą liczby.  Ale w jaki sposób porównywane są stringi?  Odpowiedź jest
-prostsza niż mogło by się wydawać: alfabetycznie.  Litery znajdujące się
-dalej w alfabecie są "większe" od tych wcześniejszych.  Poza tym litery
-małe są "większe" od tych dużych.
+Porównywanie liczb wydaje się zrozumiałe, ale w jaki sposób porównywane
+są stringi?  Odpowiedź jest prostsza niż mogło by się wydawać:
+alfabetycznie.  Litery znajdujące się dalej w alfabecie są "większe"
+od tych wcześniejszych.  Poza tym litery małe są "większe" od tych dużych.
 
 ```python
 >>> 'A' < 'B' < 'a' < 'b'
@@ -108,8 +119,8 @@ True
 
 Co ze stringami, które mają więcej niż jeden znak?  Są one porównywane
 znak po znaku, dopóki któryś z nich nie będzie się różnił, albo dopóki
-jeden ze stringów będzie dłuższy.  W tym drugim przypadku większy będzie
-ten string który ma więcej znaków.
+jeden ze stringów nie będzie dłuższy.  W tym drugim przypadku większy
+będzie ten string który ma więcej znaków.
 
 ```python
 >>> 'a' < 'ala'
@@ -123,8 +134,8 @@ True
 
 ## Operator `in`
 
-Poza dotychczas omówionymi operatorami, jest jeszcze jeden, szczególnie
-przydatny kiedy pracujemy z listami.  Operator `in` zwraca `True` jeżeli
+Poza dotychczas omówionymi operatorami, jest jeszcze jeden, przydatny
+szczególnie kiedy pracujemy z listami.  Operator `in` zwraca `True` jeżeli
 dany element znajduje się na liście:
 
 ```python
@@ -137,7 +148,7 @@ False
 
 ## Instrukcja warunkowa `if`
 
-Sprawdzanie czy jakieś wyrażenie jest prawdziwe nie miałoby żadnego sensu
+Sprawdzanie czy jakieś wyrażenie jest prawdziwe nie miałoby większego sensu
 gdybyśmy nie mogli w jakiś sposób na tej podstawie podjąć decyzji
 o dalszym przebiegu naszego programu.  W tym celu używamy **instrukcji
 warunkowej** `if`:
@@ -228,7 +239,7 @@ definiuje prawdziwość.  Na przykład pusta lista to fałsz, a lista z co
 najmniej jednym jednym elementem to prawda.
 
 Aby przekonać się jaką wartość w rozumieniu logiki reprezentuje dany
-obiekt, możemy posłużyć się funkcją zbudowaną `bool`.  Przyjmuje ona jeden
+obiekt, możemy posłużyć się funkcją wbudowaną `bool`.  Przyjmuje ona jeden
 argument - dowolny obiekt - i zwraca jego wartość logiczną: `True` lub
 `False`.
 

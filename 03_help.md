@@ -33,9 +33,9 @@ find(...)
     Return -1 on failure.
 ```
 
-Czytanie dokumentacji nie jest łatwe, ale nie zrażaj się. Warto oswajać się
-z nią od samego początku. Przeczytaj fragment powyżej jeszcze raz, a zaraz
-udzielimy Ci kilku wskazówek, jak czytać dokumentację.
+Dokumentacja nie zawsze jest pisana prostym językiem, ale nie zrażaj się.
+Warto oswajać się z nią od samego początku. Przeczytaj powyższy fragment
+jeszcze raz, a zaraz wyjaśnimy co dokładnie oznaczają poszczególne części.
 
 Dokumentacja pokazuje wszystkie argumenty jakie przyjmuje dana metoda.
 Tę informację zawiera linia "S.find(sub [,start [,end]])".

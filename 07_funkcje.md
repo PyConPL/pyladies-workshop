@@ -19,7 +19,7 @@ funkcji.  **Funkcja** to wydzielony zbiór instrukcji, który możemy
 wielokrotnie wykonać w programie.  **Definicja funkcji** to sposób w jaki
 opisujemy, które operacje mają być zawarte w funkcji.
 
-Przykładowo, poniższa funkcja liczbę podniesioną do kwadratu:
+Przykładowo, poniższa funkcja zwraca liczbę podniesioną do kwadratu:
 
 ```python
 def kwadrat(liczba):
@@ -118,7 +118,7 @@ Funkcja nie musi posiadać żadnych argumentów, w takim wypadku nawiasy
 w nagłówku zostawiamy puste:
 
 ```python
-def funkcja():
+def funkcja_bez_argumentow():
     return 123
 ```
 
@@ -137,7 +137,7 @@ def osoba(imie, nazwisko, tytul):
 Takie funkcje wywołujemy podobnie jak te z jednym argumentem:
 
 ```python
->>> funkcja()
+>>> funkcja_bez_argumentow()
 123
 >>> suma(100, 45)
 145

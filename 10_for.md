@@ -102,8 +102,8 @@ podamy jej jako argument jakiś znak, wtedy string zostanie podzielony
 w miejscach występowania tego znaku:
 
 ```python
->>> s = '2015,2016,2017'
->>> s.split(',')
+>>> tekst = '2015,2016,2017'
+>>> tekst.split(',')
 ['2015', '2016', '2017']
 ```
 

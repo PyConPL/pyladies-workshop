@@ -61,7 +61,7 @@ mówiły nam co oznaczają:
 Operację `zmienna = wartość` nazywamy **przypisaniem**.  W wyniku
 przypisania Python tworzy *zmienną*, która otrzymuje *wartość*.  Jeżeli
 wartość jest operacją (np. dodawaniem), to najpierw jest obliczany jej
-rezultat, a nawstępnie zostaje on przypisany do zmiennej.
+rezultat, a następnie zostaje on przypisany do zmiennej.
 
 
 ## Nazwy zmiennych
@@ -71,8 +71,8 @@ powinna ona wprost mówić jakie jest znaczenie zmiennej.  Dzięki temu, tak
 jak w powyższym przykładzie, będziemy mogli z łatwością zrozumieć kod
 programu.
 
-Poza tym Python narzuca ograniczenia na znaki, jakich możemy użyć w nazwie
-zmiennej.  Dozwolone znaki to:
+Poza tym Python narzuca kilka ograniczeń na znaki, jakich możemy użyć
+w nazwie zmiennej.  Dozwolone znaki to:
 
 * litery od `a` do `z` (małe) oraz od `A` do `Z` (duże),
 * cyfry,

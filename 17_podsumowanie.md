@@ -16,7 +16,7 @@ takie trudne.  Jednak na tym etapie często trafisz na kod, którego nie
 zrozumiesz.  A może już teraz wiesz o tematach, które wydają się
 interesujące, ale nie wiesz jak zacząć.  Dlatego przygotowaliśmy dla Ciebie
 listę zagadnień, którą możesz potraktować jako kontynuację tych warsztatów.
-Nie jest to wyczerpująca lista tematów, ale na pewno pomoże Ci jeszcze
+Lista ta nie jest wyczerpująca, ale na pewno pomoże Ci jeszcze
 lepiej poznać Pythona.  W każdym punkcie umieściliśmy odnośnik do strony,
 która wyjaśnia dany temat.
 

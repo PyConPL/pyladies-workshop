@@ -18,9 +18,10 @@ while licznik < 10:
     licznik = licznik + 1
 ```
 
-Definicję pętli zaczynamy słowem `while`, następnie definiujemy warunek,
-a po drukropku, w kolejnych linijkach i po wcięciu, wypisujemy instrukcje,
-które będą wykonywane tak długo jak warunek będzie prawdziwy.
+Definicję pętli zaczynamy słowem `while`, następnie definiujemy warunek
+(tak jak w instrukcji `if`), a po drukropku, w kolejnych linijkach
+i po wcięciu, wypisujemy instrukcje, które będą wykonywane tak długo
+jak warunek będzie prawdziwy.
 
 Zwróć uwagę, że jeżeli zdefiniujemy warunek, który zawsze będzie prawdziwy,
 wtedy pętla będzie wykonywana w nieskończoność:
