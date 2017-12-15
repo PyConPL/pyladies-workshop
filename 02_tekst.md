@@ -78,14 +78,14 @@ Pisząc programy często musimy sobie radzić ze stringami, które pochodzą
 ze źródeł na które nie mamy wpływu.  Na przykład informacje z formularza
 wypełnionego przez użytkownika, albo dane odczytane z pliku.
 We wszystkich tych przypadkach przetwarzamy stringi, o których strukturze
-nic nie wiemy.  Operacje pomagają nam przekształcić stringi na jednolitego
+nic nie wiemy.  Operacje pomagają nam przekształcić stringi do pożądanego
 formatu, albo wyszukać w nich jakieś informacje.
 
 Dobrym przykładem jest imię i nazwisko.  Wyobraź sobie, że tworzysz
 program, który pobiera od użytkownika jego imię i nazwisko.  Chcesz
 zapisać te dane w formacie `Imię Nazwisko`, czyli tak, aby każde ze słów
-zaczynało się wielką literą.  Problem polega na tym, że użytkownik może
-wpisać `jan kowalski`, albo `JAN KOWALSKI`.  W obu przypadkach dostaniesz
+zaczynało się wielką literą.  Jednak użytkownik może wpisać w formularzu
+`jan kowalski`, albo `JAN KOWALSKI`.  W obu przypadkach dostaniesz
 stringi w innym formacie niż się spodziewasz.  Możesz sobie z tym poradzić
 używając metody `title`, która obie te wartości zamieni na `Jan Kowalski`.
 
@@ -99,18 +99,18 @@ Niektóre operacje wymagają podania dodatkowych opcji.  Na przykład:
 6
 ```
 
-Metoda `find` wyszukuje w stringu podany łańcuch i zwraca numer znaku, w
-którym ten łańcuch się zaczyna.  Zwróć uwagę, że znaki numerowane są od
-zera:
+Metoda `find` wyszukuje w stringu podany łańcuch i zwraca numer znaku
+(mówimy: indeks znaku), w którym ten łańcuch się zaczyna.  Zwróć uwagę,
+że znaki numerowane są od zera:
 
 ```
 K u b u ś   P u c h ...
 0 1 2 3 4 5 6 7 8 9 ...
 ```
 
-Wywołaliśmy metodę `find` podając jej stringa `'Pu'`.  Taki łańcuch
+Wywołaliśmy metodę `find` podając jej string `'Pu'`.  Taki łańcuch
 znajduje się wewnątrz stringa `'Kubuś Puchatek'` i zaczyna się od znaku
-numer 6, dlatego tą liczbę zobaczyliśmy na ekranie.
+numer 6, dlatego tę liczbę zobaczyliśmy na ekranie.
 
 Wartości, które musimy podać wywołując metodę (np. `'Pu'` z przykładu)
 nazywamy **argumentami**.  Niektóre metody nie przyjmują żadnych

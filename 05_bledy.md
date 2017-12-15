@@ -8,19 +8,24 @@ W tym rozdziale:
 ## Wyjątki
 
 Tworząc programy nigdy nie jesteśmy w stanie przewidzieć wszystkich
-sytuacji jakie mogą się wydarzyć.  Czasami stanie się coś, czego się nie
-spodziewaliśmy, a czasami po prostu użyjemy języka w nieprawidłowy sposób.
-Na każdą taką sytuację Python zareaguje zgłaszając błąd lub wyjątek. Między
-tymi pojęciami jest różnica, ale nie musimy ich na razie rozróżniać.
+sytuacji jakie mogą się wydarzyć.  Czasami użytkownik poda dane, których
+nasz program nie jest w stanie przetworzyć: na przykład spodziewaliśmy
+się liczby, a dostaliśmy tekst.  Innym razem pomylimy się i wywołamy
+na jakimś obiekcie metodę, która nie istnieje.  Na każdą tego typu sytuację
+Python zareaguje zgłaszając błąd.
 
-Kiedy Python natrafi na taką sytuację, przerwie działanie programu i wyświetli
-nam komunikat, dzięki któremu dowiemy się na czym polegała nasza pomyłka
-i będziemy mogli poprawić kod programu, żeby uniknąć tego samego problemu
-w przyszłości.
+Kiedy to się zdarzy, działanie programu zostanie przerwane i wyświetlony
+zostanie komunikat, dzięki któremu dowiemy się na czym polegała nasza
+pomyłka, co pozwoli nam poprawić kod programu, żeby uniknąć tego samego
+problemu w przyszłości.
 
-Słowa "błąd" czy "problem" są bardzo ogólne, ponieważ mogą dotyczyć rzeczy
-na które jako programiści nie mamy wpływu.  Dlatego posługujemy są terminem
-**wyjątek**.  Oznacza on sytuację, w której Python zatrzymał wykonywanie
+Słowa "błąd" czy "problem" są bardzo ogólne, ponieważ mogą dotyczyć również
+rzeczy na które jako programiści nie mamy wpływu.  Dlatego posługujemy się
+terminem **wyjątek**, który określa tylko te wypadki jakie język
+programowania może obsłużyć - czyli takie, na jakie nasze programy mogą
+zareagować.
+
+W praktyce wyjątek to sytuacja, w której Python zatrzymał wykonywanie
 programu, ponieważ napotkał *wyjątkową* sytuację, której sam nie potrafił
 obsłużyć.  Mówi się, że program **rzucił wyjątek**.  Kiedy tak się stanie,
 rolą programisty jest dostosowanie programu w taki sposób, aby
@@ -31,7 +36,7 @@ wykonania operacji, której Python nie potrafi zrealizować, na przykład
 dodanie liczby do tekstu.  Albo błąd "za mało miejsca na dysku twardym"
 podczas zapisywania jakiegoś pliku.  Nie sposób wymienić wszystkie takie
 możliwości - z czasem poznasz zestaw najczęściej występujących wyjątków
-i nauczysz się przewidywać jakie operacje mogą skutkować rzuceniem wyjątku.
+i nauczysz się przewidywać jakie operacje mogły je spowodować.
 
 ## Jak czytać komunikaty o błędach i wyjątkach
 
@@ -54,7 +59,7 @@ Jak widzisz, zamiast wyświetlić tę frazę, Python zgłosił błąd.
 Przeczytajmy go linijka po linijce.
 
 * Na samym początku widzimy zawsze wiadomość
-`Traceback (most recent call last):`.  Słowem "Traceback" określa się listę
+`Traceback (most recent call last):`.  Słowem "traceback" określa się listę
 operacji, których wykonanie spowodowało błąd.  W tym przypadku wykonana
 została tylko jedna operacja (zwrócenie wpisanej frazy), ale w przyszłości
 spotkasz się z sytuacjami, w których wyjątek czy błąd został rzucony wskutek

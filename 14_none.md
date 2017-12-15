@@ -143,8 +143,10 @@ Instrukcja `if zmienna == None` jest poprawna, jednak w ogólnym przypadku
 może nie zawsze działać.  Dzieje się tak, ponieważ tworząc bardziej
 zaawansowane struktury danych w Pythonie (co nie będzie omówione podczas
 tych warsztatów), możemy zmienić zachowanie porównania, w efekcie wpływając
-na wynik zwracany przez operator `==`.  Możemy wybrnąć z tej sytuacji
-stosując zamiast tego **operator `is`**:
+na wynik zwracany przez operator `==`.  Jeżeli zrobimy to nieostrożnie,
+może się okazać, że jakaś operacja `if` działa inaczej niż się tego
+spodziewamy.  Możemy wybrnąć z tej sytuacji stosując zamiast
+tego **operator `is`**:
 
 ```python
 if pelne_nazwisko is None:

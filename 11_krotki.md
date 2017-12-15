@@ -15,7 +15,7 @@ waluty = ('EUR', 'PLN', 'USD')
 ```
 
 Powyższy przykład to definicja **krotki**.  Na pierwszy rzut oka różni się
-ona od listy tylko na tym, że zamiast nawiasów kwadratowych ma okrągłe.
+ona od listy tylko tym, że zamiast nawiasów kwadratowych ma okrągłe.
 Jednak krotka posiada jedną istotną cechę, która odróżnia ją od listy:
 nie można jej modyfikować.  Oznacza to, że do raz utworzonej krotki nie
 można dodawać elementów, usuwać ich, ani nawet zmieniać.  Dlatego też nie

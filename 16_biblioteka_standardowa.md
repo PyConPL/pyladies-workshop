@@ -29,10 +29,11 @@ tysiące modułów, które różne osoby i firmy udostępniają.  Możemy je pob
 i używać ich do pisania programów.  Możemy też tworzyć własne moduły
 i dzielić się nimi z innymi użytkownikami.
 
-Aby skorzystać z modułu musimy **zaimportować** jego nazwę.  Robimy to
-instrukcją `import`.  Gdy moduł jest już zaimportowany, możemy używać
-funkcji i zmiennych, które zostały w nim zdefiniowane.  Robimy to wpisując
-nazwę modułu, a następnie, po kropce, nazwę obiektu.
+Aby skorzystać z modułu w kodzie naszego programu musimy **zaimportować**
+jego nazwę.  Robimy to instrukcją `import`.  Gdy moduł jest już
+zaimportowany, możemy używać funkcji i zmiennych, które zostały w nim
+zdefiniowane.  Robimy to wpisując nazwę modułu, a następnie, po kropce,
+nazwę obiektu.
 
 W poniższym przykładzie importujemy moduł o nazwie `math` i wywołujemy
 funkcję `sqrt`, która zwraca pierwiastek kwadratowy z podanej liczby:

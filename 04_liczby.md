@@ -112,7 +112,7 @@ Przykładowo, w takim działaniu:
 najpierw zostanie wykonane mnożenie, a dopiero potem dodawanie, czyli rezultatem będzie `64`.
 
 Poniższa tabelka prezentuje operatory oraz ich znaczenie. Kolejność wierszy odpowiada
-priorytetowi, czyli na samej górze jest operator z najwyższym priorytetem, a na dole
+priorytetowi, czyli na samej górze są operatory z najwyższym priorytetem, a na dole
 z najniższym.
 
 Operatory | Znaczenie
