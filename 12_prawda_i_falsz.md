@@ -19,7 +19,7 @@ zostały wykonane tylko gdy zostanie spełniony pewien warunek.
 
 Na przykład: mamy listę liczb i chcemy przejść po jej elementach, wypisując
 tylko te nieparzyste.  W takim przypadku warunkiem wypisania liczby na
-ekran jest "liczba jest niepatrzysta".
+ekran jest "liczba jest nieparzysta".
 
 Języki programowania pozwalają definiować takie warunki i sprawdzać je.
 Wynikiem takiego sprawdzenia jest **prawda** lub **fałsz**.  Prawda oznacza
@@ -272,7 +272,7 @@ przynajmniej jeden element nie jest prawdziwy.
 W tym rozdziale:
 
 * nauczyliśmy się sprawdzać prawdziwość wyrażeń,
-* poznaliśmy intrukcję `if`, która może zmienić przebieg programu gdy
+* poznaliśmy instrukcję `if`, która może zmienić przebieg programu gdy
 określone wyrażenie jest prawdziwe.
 
 

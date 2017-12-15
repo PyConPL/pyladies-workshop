@@ -61,7 +61,7 @@ liczba `2017`.
 
 ## Zastosowanie modułów
 
-Moduły to jeden z najpotężniejszych mechanizów w Pythonie.  Pozwalają
+Moduły to jeden z najpotężniejszych mechanizmów w Pythonie.  Pozwalają
 podzielić programy na logicznie odseparowane fragmenty.  Przykładowo,
 w jednym module możemy umieścić wszystkie funkcje odpowiedzialne za
 obliczenia matematyczne, w drugim funkcje wypisujące dane na ekran,
@@ -69,6 +69,6 @@ a w trzecim połączyć wszystko w całość korzystając z dwóch pozostałych
 modułów.
 
 Pisząc programy zawsze miej na uwadze, że podział na moduły zwiększa
-czytelnośc Twojego kodu.  Również Tobie łatwiej będzie wrócić do programu,
+czytelność Twojego kodu.  Również Tobie łatwiej będzie wrócić do programu,
 którego kod został w taki sposób uporządkowany.
 

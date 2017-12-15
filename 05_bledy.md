@@ -41,7 +41,7 @@ i nauczysz się przewidywać jakie operacje mogły je spowodować.
 ## Jak czytać komunikaty o błędach i wyjątkach
 
 Spróbujmy wywołać błąd i zobaczyć jak zachowa się nasz program.
-Pamiętasz, jak informowaliśmy o tym, że stringi wstawiamy w pojedyńczy lub
+Pamiętasz, jak informowaliśmy o tym, że stringi wstawiamy w pojedynczy lub
 podwójny cudzysłów, ale musisz pamiętać, żeby cudzysłów zamykający był taki
 sam jak otwierający? Zróbmy eksperyment i sprawdźmy, co się stanie, kiedy
 złamiemy tę zasadę.

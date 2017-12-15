@@ -9,7 +9,7 @@ W tym rozdziale:
 ## Biblioteka
 
 W programowaniu posługujemy się pojęciem **biblioteka**, które oznacza
-zbiór programów i narzędzi do ich budowania, które możemy wykrzystać
+zbiór programów i narzędzi do ich budowania, które możemy wykorzystać
 pisząc własne programy.  Przykładem biblioteki może być zbiór funkcji
 matematycznych (np. trygonometrycznych), do których możemy odwołać się
 w naszym kodzie zamiast definiować je samodzielnie.
@@ -169,7 +169,7 @@ z miesiącem spoza zakresu od 1 do 12 lub datę, która nie istnieje, np.
 31 kwietnia.
 
 :snake: Zobacz co się stanie jeżeli spróbujesz utworzyć obiekt `datetime`
-z godziną, minutą lub sekundą o wartosci spoza dopuszczalnego zakresu
+z godziną, minutą lub sekundą o wartości spoza dopuszczalnego zakresu
 (np. godzina 26).
 
 Jeżeli chcemy zobaczyć różnicę w czasie między dwoma obiektami typu
@@ -239,7 +239,7 @@ string) i zwraca losowo wybrany element:
 ```
 
 :snake: Napisz funkcję, która przyjmie jako argument dowolną sekwencję
-i zwróci *krotkę* z trzema losowo wybramymi z niej elementami.
+i zwróci *krotkę* z trzema losowo wybranymi z niej elementami.
 
 
 ### [`json`](https://docs.python.org/3/library/json.html)

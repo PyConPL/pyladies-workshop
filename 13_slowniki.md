@@ -239,7 +239,7 @@ mapujemy słowa z jednego języka na drugi),
 
 :snake: Wybierz jedno z powyższych zastosowań słownika.  Napisz funkcję
 `ustaw`, która przyjmuje trzy argumenty, słownik, klucz oraz wartość i
-ustawia w słowniu daną wartość pod danym kluczem.  Napisz funkcję
+ustawia w słowniku daną wartość pod danym kluczem.  Napisz funkcję
 `pobierz`, która przyjmuje dwa argumenty, słownik oraz klucz i zwraca
 wartość słownika pod danym kluczem.  Stosując te funkcje wypełnij słownik
 danymi adekwatnymi dla wybranego zastosowania i pobierz te dane.

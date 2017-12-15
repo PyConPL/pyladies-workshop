@@ -73,12 +73,12 @@ rozumieć jako kod wpisany w edytorze i uruchomiony przyciskiem "run".
 
 Przepisz teraz do edytora kod funkcji zapisany poniżej.  Zwróć szczególną
 uwagę na **wcięcia**.  Każda linijka ciała funkcji musi zaczynać się od
-wcięcia.  Co istotne, wszystkie te wcięcia **muszę mieć taką samą
+wcięcia.  Co istotne, wszystkie te wcięcia **muszą mieć taką samą
 szerokość**.  Oznacza to, że jeżeli w pierwszej linijce zrobisz wcięcie
 na dwie spacje, to wszystkie pozostałe linijki aż do końca funkcji też
 muszą mieć wcięcie na dwie spacje.  Jak zauważysz, edytor sam zrobi
 wcięcie kiedy po wpisaniu nagłówka wciśniesz Enter.  Jeżeli by tego nie
-zrobił, wtedy najłatwiej jest robić wcięcia klawiczem Tab.
+zrobił, wtedy najłatwiej jest robić wcięcia klawiszem Tab.
 
 ```python
 def kwadrat(liczba):
@@ -157,7 +157,7 @@ spacją.  Upewnij się, że każde słowo w stringu zaczyna się od wielkiej
 litery (użyj metody `title`).  Następnie napisz funkcję `lubi`,
 z argumentami `imie`, `nazwisko` oraz `co` i wywołana w ten sposób:
 `lubi('jan', 'kowalski', 'KALAFIORY')` zwróci stringa
-`'Jan Kowalski lubi kalfiory'`.  Pisząc funkcję `lubi` użyj funkcji
+`'Jan Kowalski lubi kalafiory'`.  Pisząc funkcję `lubi` użyj funkcji
 `imie_nazwisko`.
 
 
@@ -208,7 +208,7 @@ z częścią ułamkową (float), np. `3.14`.
 :snake: Zobacz co się stanie, jeśli przekażesz do `int` stringa, w którym
 nie ma żadnej liczby.
 
-:snake: Zobacz co sie stanie, kiedy przekażesz do `int` stringa, w którym
+:snake: Zobacz co się stanie, kiedy przekażesz do `int` stringa, w którym
 są zarówno litery jak i cyfry, np. `Ala ma 2 koty`.
 
 

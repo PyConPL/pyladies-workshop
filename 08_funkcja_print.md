@@ -21,7 +21,7 @@ wystarczyło wpisać jakieś wyrażenie i wcisnąć Enter:
 Mogliśmy tak robić, ponieważ w ten sposób działa tryb interaktywny:
 wykonuje operację i wyświetla jej wynik.  Jednak zazwyczaj programy
 w Pythonie są bardziej złożone i często zdarza się, że chcemy zobaczyć
-więcej niż tylko wynik ostatniej operacj.  Na przykład gdy piszemy program,
+więcej niż tylko wynik ostatniej operacji.  Na przykład gdy piszemy program,
 który przetwarza plik tekstowy i chcemy, żeby dla każdej linijki tekstu
 wypisał coś na ekran.  W takim wypadku z pomocą przychodzi funkcja
 wbudowana `print`.

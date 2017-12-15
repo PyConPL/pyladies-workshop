@@ -2,11 +2,11 @@
 
 Praca na stronie repl.it jest wygodna podczas nauki, jednak aby w pełni
 korzystać z Pythona, warto go zainstalować na własnym komputerze.  Poniżej
-znajdziesz intrukcję instalacji Pythona na systemie Windows.  Jeżeli
+znajdziesz instrukcję instalacji Pythona na systemie Windows.  Jeżeli
 używasz innego systemu operacyjnego - poproś o pomoc mentora.
 
 
-## Krok 1: podbierz program instalacyjny
+## Krok 1: pobierz program instalacyjny
 
 Wejdź na stronę https://www.python.org/ a następnie otwórz zakładkę
 "Downloads" i odszukaj w niej przycisk "Python 3.6.2".  Kliknij w niego.

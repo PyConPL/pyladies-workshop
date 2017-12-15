@@ -80,7 +80,7 @@ Lista może zawierać w sobie również inne listy:
 ['zielony', ['karmazynowy', 'czerwony', 'bordowy'], 'niebieski']
 ```
 
-:snake: Napisz funkcję `element`, która przymuje dwa argumenty, listę oraz
+:snake: Napisz funkcję `element`, która przyjmuje dwa argumenty, listę oraz
 numer indeksu (integer) i zwraca element listy znajdujący się pod podanym
 indeksem.
 
@@ -117,7 +117,7 @@ jej końcu taki sam element jaki jest na samym jej początku.
 ### `pop`
 
 Metoda `pop` nie przyjmuje żadnych argumentów, a zwraca ostatni element
-lity, jednocześnie usuwając go z niej:
+listy, jednocześnie usuwając go z niej:
 
 ```python
 >>> litery = ['a', 'b', 'c', 'd']
@@ -259,7 +259,7 @@ Czasami operując na liście chcielibyśmy używać tylko jej fragmentu, np.
 jest przygotowany na taką sytuację: umożliwia utworzenie *wycinka*
 listy (ang. *slice*).  Aby stworzyć wycinek należy wpisać nazwę listy,
 a następnie w nawiasach kwadratowych indeksy pierwszego i ostatniego
-wycinka elementu odzielone dwukropkiem.
+wycinka elementu oddzielone dwukropkiem.
 
 Przykładowo, zwrócenie fragmentu listy od drugiego do czwartego elementu
 będzie wyglądało tak:

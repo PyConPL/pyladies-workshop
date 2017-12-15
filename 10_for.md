@@ -25,7 +25,7 @@ listy po kolei możemy oczywiście użyć indeksów:
 
 Jednak takie podejście jest niewygodne kiedy lista jest bardzo długa.
 A co gdy w ogóle nie wiemy na jak długiej liście działamy?  Te problemy
-można rozwiązać przy pomocy **pętli**, czyli instrukcji, która wykonuje
+można rozwiązać za pomocą **pętli**, czyli instrukcji, która wykonuje
 podane operacje dopóki jakiś warunek nie zostanie spełniony.  Z użyciem
 pętli możemy na przykład iterować, czyli wykonywać operacje na kolejnych
 elementach listy, dopóki nie dojdziemy do jej końca.
@@ -53,7 +53,7 @@ Definicja pętli zaczyna się od słowa `for`, następnie należy podać nazwę
 zmiennej, do której będą przypisywane wartości kolejnych elementów, dalej
 wpisujemy słowo `in`, nazwę listy oraz dwukropek.  W kolejnych linijkach
 znajdują się operacje, które zostaną wykonane dla każdego elementu.
-Pamiętaj, że przed każdą operacją musi się znaleźć jednakowe wciącie
+Pamiętaj, że przed każdą operacją musi się znaleźć jednakowe wcięcie
 w kodzie.  Ich szerokość nie ma znaczenia, ważne żeby były takie same.
 
 Jeżeli pętla znajduje się wewnątrz funkcji, to wcięcie wewnątrz `for`
