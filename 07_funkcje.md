@@ -102,7 +102,7 @@ w nawiasach wpisać wartość argumentu.  Jeżeli argumentów jest wiele, to
 należy je oddzielić przecinkami.
 
 :snake: Zdefiniuj funkcję o nazwie `pole_kola`, która przyjmuje argument
-`promien` i zwraca wartość równania `(promien * 3.14) ** 2`.  Wywołaj ją
+`promien` i zwraca wartość równania `3.14 * (promien ** 2)`.  Wywołaj ją
 w oknie trybu interaktywnego.
 
 :snake: Wywołaj funkcję `pole_kola` bez argumentu: `pole_kola()`. Czy
