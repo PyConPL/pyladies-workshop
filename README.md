@@ -76,4 +76,5 @@ dzięki temu sami możemy teraz na nie odpowiadać.
 2. [Moduły](./d02_moduly.md)
 2. [Funkcja `input`](./d03_input.md)
 4. [Operacje na plikach](./d04_pliki.md)
+5. [Zadania](./d05_zadania.md)
 
