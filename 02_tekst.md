@@ -56,8 +56,9 @@ stringa na inny string, na przykład:
 W tym przykładzie wykonaliśmy dwie operacje: zdefiniowaliśmy stringa
 `'Kubuś Puchatek'` oraz **wywołaliśmy metodę** `lower`.  Metoda to po
 prostu operacja jaką można wykonać na jakimś obiekcie.  W tym przypadku
-obiektem jest nasz string, a metoda powoduje stworzenie nowego stringa,
-w którym wszystkie wielkie litery zostały zastąpione małymi.
+obiektem jest nasz string, a metodą jest `lower`, która spowodowała
+stworzenie nowego stringa, w którym wszystkie wielkie litery zostały
+zamienione na małe.
 
 String w Pythonie posiada wiele innych metod, na przykład:
 
@@ -115,23 +116,26 @@ numer 6, dlatego tę liczbę zobaczyliśmy na ekranie.
 Wartości, które musimy podać wywołując metodę (np. `'Pu'` z przykładu)
 nazywamy **argumentami**.  Niektóre metody nie przyjmują żadnych
 argumentów, ale są też takie, które wymagają podania jednego lub więcej.
-Jeżeli metoda przyjmuje wiele argumentów, to muszą być oddzielone od
+Jeżeli metoda przyjmuje wiele argumentów, to muszą być one oddzielone od
 siebie przecinkami.
 
 
 ## `find`, `replace`, `count`
 
 Nie będziemy teraz przechodzili przez wszystkie metody jakie posiada
-string, ale trzy z nich warto poznać już na samym początku.
+string, ale trzy z nich warto poznać już na samym początku, ponieważ
+korzysta się z nich często.
 
 ### `find`
 
-`find` jako argument przyjmuje string i szuka go w stringu na jakim
-wywołaliśmy operację.  Jeżeli łańcuch zostanie znaleziony, otrzymujemy
-numer znaku od którego się zaczyna.  W przeciwnym wypadku dostaniemy `-1`.
+`find` poznaliśmy w przed chwilą: jako argument przyjmuje string i szuka
+go w stringu na jakim wywołaliśmy operację.  Jeżeli łańcuch zostanie
+znaleziony, otrzymujemy numer znaku od którego się zaczyna.  W przeciwnym
+wypadku dostaniemy `-1`.
 
-Ta metoda jest przydatna na przykład kiedy szukamy jakieś frazy i chcemy
-się przekonać czy dany string ją zawiera.
+Ta metoda jest przydatna kiedy szukamy jakieś frazy i chcemy się przekonać
+czy dany string ją zawiera.  Na przykład, gdy chcemy się dowiedzieć
+czy nasz użytkownik nazywa się "Nowak":
 
 ```python
 >>> 'Anna Nowak'.find('Nowak')
@@ -141,6 +145,9 @@ się przekonać czy dany string ją zawiera.
 >>> 'Tomasz Nowak'.find('Nowak')
 7
 ```
+
+W powyższym przykładzie jeśli wartość zwrócona przez `find` jest inna
+niż `-1`, oznacza to, nazwisko użytkownika się zgadza.
 
 Zwróć uwagę, że wielkość liter ma znaczenie:
 
@@ -153,11 +160,32 @@ Zwróć uwagę, że wielkość liter ma znaczenie:
 -1
 ```
 
+Metoda ta jest przydatna również wtedy, gdy jesteśmy pewni, że dany
+string zawiera szukany łańcuch znaków, ale musimy sprawdzić na której
+dokładnie pozycji.
+
+Na przykład, możemy się dowiedzieć, którą literą alfabetu jest litera `r`:
+
+```python
+>>> 'aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż'.find('r')
+23
+```
+
+Zwróc uwagę, że litera `a` jest na pozycji `0`, więc litera `r` tak
+na prawdę jest nie dwudziestą trzecią, ale dwudziestą czwartą literą
+alfabetu.  Ten przykład pokazuje jak ważne jest poprawne interpretowanie
+informacji zwracanych przez programy.
+
+:snake: Wybierz kilka paragrafów (2 lub więcej) z tej strony i dla
+każdego z nich: skopiuj jego treść i użyj jej do zdefiniowania stringa,
+a następnie wywołaj na nim metodę `find` żeby sprawdzić, czy znajduje
+się w nim łańcuch `ale`.
+
 ### `replace`
 
 `replace` przyjmuje dwa argumenty: stringi `a` i `b`.  Kiedy wywołamy tę
-metodę na stringu, to wszystkie wystąpienia łacucha `a` zostaną zastąpione
-łańcuchem `b`.
+metodę na jakimś stringu, to wszystkie wystąpienia łacucha `a` w tym stringu
+zostaną zastąpione łańcuchem `b`.
 
 Przykładowo, możesz zastąpić wszystkie spacje znakiem `-`:
 
@@ -180,6 +208,11 @@ znaku.  Możesz to zrobić podając pusty string jako drugi argument:
 >>> 'Jan Kowalski'.replace('Kowalski', '')
 'Jan '
 ```
+
+:snake: Wpisz w trybie interaktywnym stringa z Twoim imieniem i nazwiskiem,
+a następnie użyj na nim metody `replace` aby zamienić Twoje imię na
+imię jednej z uczestniczek warsztatów siedzącej obok Ciebie.
+
 ### `count`
 
 `count` przyjmuje jeden string jako argument i zwraca liczbę wystąpień
@@ -195,15 +228,16 @@ fraza powtarza się więcej niż raz w danym stringu:
 2
 ```
 
-:snake: Zdefiniuj kilka stringów i na każdym z nich wywołaj każdą z
-powyższych metod.  Upewnij się, że rozumiesz jak działają, a w razie
-wątpliwości poproś o pomoc mentora.
+:snake: Skopiuj treść któregoś z paragrafów na tej stronie, użyj
+go do zdefiniowania stringa i wywołując na nim metodę `count` sprawdź
+ile razy występują w nim następujące ciągi znaków: `i`, `string` oraz
+`na`.
 
 
 ## Długość stringa, funkcja `len`
 
 Jedną z najbardziej przydatnych operacji jaką możemy wykonać na stringu
-jest sprawdzenie jego długości.  Na przykład chcemy sprawdzić czy nie
+jest sprawdzenie jego długości.  Przykładowo, chcemy sprawdzić czy nie
 jest zbyt długi, albo chcemy sprawdzić który z dwóch stringów jest
 dłuższy.  Tutaj z pomocą przychodzi funkcja `len`:
 
@@ -213,7 +247,7 @@ dłuższy.  Tutaj z pomocą przychodzi funkcja `len`:
 ```
 
 Zwróć uwagę, że `len` nie jest metodą, czyli nie stosujemy notacji
-`obiekt.metoda()`.  Dzieje się tak, ponieważ sprawdzenie długości
+`obiekt.metoda()`.  Jest tak, ponieważ sprawdzenie długości
 jakiegoś obiektu (w tym przypadku: stringa) jest na tyle popularną
 operacją, że w Pythonie stworzono osobną funkcję która ją wykonuje.
 
@@ -225,7 +259,7 @@ ma pusty string, czyli `''`.
 
 W tym rozdziale:
 
-* dowiedzieliśmy się czym jest string,
+* dowiedzieliśmy się czym jest **string**,
 * poznaliśmy znaczenie słów **metoda** oraz **argument**,
 * nauczyliśmy się najważniejszych metod jakie można wywołać na stringu,
 * poznaliśmy funkcję `len`, która zwraca długość stringa.

@@ -2,13 +2,13 @@
 
 W tym rozdziale:
 
-* dowiesz się czym jest *integer* oraz *float*,
+* dowiesz się czym jest `integer` oraz `float`,
 * nauczysz się wykonywać operacje arytmetyczne na liczbach.
 
 ## Liczby całkowite
 
-Aby zdefiniować liczbę całkowitą (**integer**) po prostu wpisz ją nie wstawiając spacji
-między cyfry:
+Aby zdefiniować liczbę całkowitą (**integer**) po prostu wpisz ją nie stawiając
+spacji między cyframi:
 
 ```python
 >>> 2017
@@ -73,7 +73,11 @@ posłużyć się nawiasami okrągłymi:
 126
 ```
 
-:snake: Spróbuj samodzielnie wykonać kilka działań arytmetycznych.
+:snake: Oblicz następujące wartości:
+
+* suma dzisiejszego dnia, numeru miesiąca i roku,
+* wynik dzielenia roku Twojego urodzenia przez sumę dnia i miesiąca
+  w których się urodziłaś.
 
 
 ## Liczby rzeczywiste
@@ -109,7 +113,8 @@ Przykładowo, w takim działaniu:
 >>> 4 + 10 * 6
 ```
 
-najpierw zostanie wykonane mnożenie, a dopiero potem dodawanie, czyli rezultatem będzie `64`.
+najpierw zostanie wykonane mnożenie, a dopiero potem dodawanie, ponieważ
+operator `*` ma wyższy priorytet niż `+`, czyli rezultatem będzie `64`.
 
 Poniższa tabelka prezentuje operatory oraz ich znaczenie. Kolejność wierszy odpowiada
 priorytetowi, czyli na samej górze są operatory z najwyższym priorytetem, a na dole
@@ -125,8 +130,9 @@ Operatory | Znaczenie
 
 W tym rozdziale:
 
-* dowiedzieliśmy się jak definiować liczby całkowite (*integer*) i zmiennoprzecinkowe (*float*),
-* poznaliśmy najważniejsze operatory matematyczne i ich priorytety.
+* dowiedzieliśmy się jak definiować liczby całkowite (**integer**)
+  i zmiennoprzecinkowe (**float**),
+* poznaliśmy najważniejsze **operatory** matematyczne i ich priorytety.
 
 ---
 

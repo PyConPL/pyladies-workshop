@@ -46,16 +46,16 @@ W przykładach kodu, które znajdziesz w kolejnych rozdziałach, wielokrotnie
 zobaczysz ciąg znaków `>>>`.  Jest to **znak zachęty**.  Używamy go aby
 odróżnić tekst, który należy wpisać w trybie interaktywnym od tekstu, który
 interpreter Pythona sam wypisuje.  Jeżeli w jakiejś linijce przykładu
-zobaczysz znak zachęty, to znaczy, że wszystko co następuje po znaku należy
-wpisać w trybie interaktywnym, a następnie wcisnąć Enter.  Samego znaku
-zachęty nie wpisujemy!
+zobaczysz znak zachęty, to znaczy, że wszystko co następuje po znaku - aż
+do końca linii - należy wpisać w trybie interaktywnym, a następnie wcisnąć
+Enter.  Samego znaku zachęty nie wpisujemy!
 
 ## :pushpin: Podsumowanie
 
 W tym rozdziale:
 
-* otworzyliśmy stronę `repl.it`, na której możemy programować w edytorze
-lub **trybu interaktywnego** Pythona,
+* otworzyliśmy stronę `repl.it`, na której możemy programować w **edytorze**
+lub w **trybie interaktywnym** Pythona,
 * dowiedzieliśmy się jak wygląda **znak zachęty** i że pokazuje nam kod,
 który należy wpisać w trybie interaktywnym.
 
