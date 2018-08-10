@@ -1,4 +1,4 @@
-# Warsztaty PyLadies / PyCon PL 2017
+# Warsztaty PyLadies / PyCon PL
 
 Witaj na warsztatach PyLadies! Podczas tego kursu nauczysz się programować
 w języku **Python** od podstaw. Aby zacząć nie potrzebujesz nic instalować,
