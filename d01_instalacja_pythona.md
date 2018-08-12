@@ -18,8 +18,8 @@ W ten sposób pobierzesz program instalacyjny Pythona.
 ## Krok 2: uruchom program instalacyjny
 
 Odszukaj na dysku program instalacyjny i uruchom go.  Zobaczysz okno
-zatytułowane "Install Python 3.6.2".  Upewnij się, że opcja "Add Python
-3.6 to PATH" jest zaznaczona, a następnie kliknij przycisk "Install Now".
+zatytułowane "Install Python 3.7.0".  Upewnij się, że opcja "Add Python
+3.7 to PATH" jest zaznaczona, a następnie kliknij przycisk "Install Now".
 
 ![krok 2](./obrazy/d01/krok_2.jpg)
 

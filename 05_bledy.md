@@ -64,7 +64,7 @@ operacji, których wykonanie spowodowało błąd.  W tym przypadku wykonana
 została tylko jedna operacja (zwrócenie wpisanej frazy), ale w przyszłości
 spotkasz się z sytuacjami, w których wyjątek czy błąd został rzucony wskutek
 wykonania całego ciągu poleceń.  Python zawsze pokazuje cały traceback, aby
-programista mógł zrozumieć co poszło nie tak.  Zdanie `most recent call last`
+programista mógł zrozumieć co poszło nie tak.  Tekst `most recent call last`
 informuje, że ostatnia operacja na liście została wykonana najpóźniej
 spośród wszystkich.
 * `File "python", line 1` to właśnie traceback. W naszym
@@ -99,7 +99,7 @@ wykonanie kodu, który nie ma sensu (możesz wpisać losowy ciąg znaków).
 
 W tym rozdziale:
 
-* dowiedzieliśmy się czym jest wyjątek i jak czytać jego treść.
+* dowiedzieliśmy się czym jest **wyjątek** i jak czytać jego treść.
 
 ---
 

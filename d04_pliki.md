@@ -132,14 +132,14 @@ w której otworzyliśmy plik albo gdy program zakończy swoje działanie.
 ## Znak nowej linii
 
 Operując na plikach tekstowych natkniemy się na **znak nowej linii**,
-który w Pythonie jest reprezentowany jako string o treści `\n`.  Oznacza
-on miejsce, w którym kończy się linia tekstu.  Sam znak nie ma w sobie
-nic szczególnego, jest po prostu znakiem jak `a` czy `7`.  Natomiast
-przyjmuje się, że znak nowej linii ma specjalne znaczenie, aby umożliwić
-podział tekstu na osobne linie.  Dlatego też jest on traktowany inaczej
-niż inne znaki, np. funkcja `print` zastąpi go przejściem do nowej linii.
-Co istotne, znak ten nie jest bezpośrednio związany z plikami - może być
-częścią dowolnego stringa.
+który w Pythonie jest reprezentowany jako string o treści `\n` (ukośnik
+i litera "n").  Oznacza on miejsce, w którym kończy się linia tekstu.
+Sam znak nie ma w sobie nic szczególnego, jest po prostu znakiem jak `a`
+czy `7`.  Natomiast przyjmuje się, że znak nowej linii ma specjalne
+znaczenie, aby umożliwić podział tekstu na osobne linie.  Dlatego też
+jest on traktowany inaczej niż inne znaki, np. funkcja `print` zastąpi
+go przejściem do nowej linii.  Co istotne, znak ten nie jest bezpośrednio
+związany z plikami - może być częścią dowolnego stringa.
 
 ```python
 >>> s = 'pierwsza linia\ndruga linia'
