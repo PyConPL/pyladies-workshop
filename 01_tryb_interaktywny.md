@@ -37,7 +37,7 @@ zrobi to tylko jeżeli mu wydamy takie polecenie (poprzez instrukcję
 
 Póki co będziemy korzystali z **trybu interaktywnego**, ponieważ będziemy
 uczyli się pojedynczych instrukcji i oglądali ich rezultaty.  Nie bój się
-eksperymentować z różnymi wariantami tych poleceń, w najgorszym wypadku
+eksperymentować z różnymi wariantami tych poleceń. W najgorszym wypadku
 Python poinformuje Cię, że wpisanego kodu nie można wykonać.
 
 ## Znak zachęty
