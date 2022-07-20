@@ -74,7 +74,7 @@ programu.
 Poza tym Python narzuca kilka ograniczeń na znaki, jakich możemy użyć
 w nazwie zmiennej.  Dozwolone znaki to:
 
-* litery od `a` do `z` (małe) oraz od `A` do `Z` (duże),
+* litery od `a` do `z` (małe) oraz od `A` do `Z` (wielkie),
 * cyfry,
 * znak `_` (podkreślenie).
 

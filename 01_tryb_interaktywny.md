@@ -11,7 +11,7 @@ przeglądarki.
 Jeżeli zobaczysz okienko z prośbą o założenie konta, zamknij je klikając
 w "x".
 
-Strona którą widzisz jest podzielona na dwie części:
+Strona, którą widzisz, jest podzielona na dwie części:
 
 * z lewej strony, na białym tle, jest **edytor** tekstu,
 * z prawej strony widać **tryb interaktywny**.

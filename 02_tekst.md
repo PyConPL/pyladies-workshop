@@ -22,7 +22,7 @@ tekst między znakami `'` (pojedynczy apostrof):
 >>> 'PyLadies 2017'
 ```
 
-W powyższym stringu znalazły się duże i małe litery, odstęp (spacja) oraz
+W powyższym stringu znalazły się wielkie i małe litery, odstęp (spacja) oraz
 cyfry.  Istnieją [tysiące znaków](https://pl.wikipedia.org/wiki/Unikod)
 jakich możesz użyć.
 
@@ -113,7 +113,7 @@ Wywołaliśmy metodę `find` podając jej string `'Pu'`.  Taki łańcuch
 znajduje się wewnątrz stringa `'Kubuś Puchatek'` i zaczyna się od znaku
 numer 6, dlatego tę liczbę zobaczyliśmy na ekranie.
 
-Wartości, które musimy podać wywołując metodę (np. `'Pu'` z przykładu)
+Wartości, które musimy podać wywołując metodę (np. `'Pu'` z przykładu),
 nazywamy **argumentami**.  Niektóre metody nie przyjmują żadnych
 argumentów, ale są też takie, które wymagają podania jednego lub więcej.
 Jeżeli metoda przyjmuje wiele argumentów, to muszą być one oddzielone od
@@ -130,10 +130,10 @@ korzysta się z nich często.
 
 `find` poznaliśmy w przed chwilą: jako argument przyjmuje string i szuka
 go w stringu na jakim wywołaliśmy operację.  Jeżeli łańcuch zostanie
-znaleziony, otrzymujemy numer znaku od którego się zaczyna.  W przeciwnym
+znaleziony, otrzymujemy numer znaku, od którego się zaczyna.  W przeciwnym
 wypadku dostaniemy `-1`.
 
-Ta metoda jest przydatna kiedy szukamy jakieś frazy i chcemy się przekonać
+Ta metoda jest przydatna, kiedy szukamy jakieś frazy i chcemy się przekonać,
 czy dany string ją zawiera.  Na przykład, gdy chcemy się dowiedzieć
 czy nasz użytkownik nazywa się "Nowak":
 
@@ -161,7 +161,7 @@ Zwróć uwagę, że wielkość liter ma znaczenie:
 ```
 
 Metoda ta jest przydatna również wtedy, gdy jesteśmy pewni, że dany
-string zawiera szukany łańcuch znaków, ale musimy sprawdzić na której
+string zawiera szukany łańcuch znaków, ale musimy sprawdzić, na której
 dokładnie pozycji.
 
 Na przykład, możemy się dowiedzieć, którą literą alfabetu jest litera `r`:
@@ -172,7 +172,7 @@ Na przykład, możemy się dowiedzieć, którą literą alfabetu jest litera `r`
 ```
 
 Zwróć uwagę, że litera `a` jest na pozycji `0`, więc litera `r` tak
-na prawdę jest nie dwudziestą trzecią, ale dwudziestą czwartą literą
+naprawdę jest nie dwudziestą trzecią, ale dwudziestą czwartą literą
 alfabetu.  Ten przykład pokazuje jak ważne jest poprawne interpretowanie
 informacji zwracanych przez programy.
 
@@ -236,7 +236,7 @@ ile razy występują w nim następujące ciągi znaków: `i`, `string` oraz
 
 ## Długość stringa, funkcja `len`
 
-Jedną z najbardziej przydatnych operacji jaką możemy wykonać na stringu
+Jedną z najbardziej przydatnych operacji, jaką możemy wykonać na stringu,
 jest sprawdzenie jego długości.  Przykładowo, chcemy sprawdzić czy nie
 jest zbyt długi, albo chcemy sprawdzić który z dwóch stringów jest
 dłuższy.  Tutaj z pomocą przychodzi funkcja `len`:
@@ -249,7 +249,7 @@ dłuższy.  Tutaj z pomocą przychodzi funkcja `len`:
 Zwróć uwagę, że `len` nie jest metodą, czyli nie stosujemy notacji
 `obiekt.metoda()`.  Jest tak, ponieważ sprawdzenie długości
 jakiegoś obiektu (w tym przypadku: stringa) jest na tyle popularną
-operacją, że w Pythonie stworzono osobną funkcję która ją wykonuje.
+operacją, że w Pythonie stworzono osobną funkcję, która ją wykonuje.
 
 :snake: Sprawdź długość Twojego imienia i nazwiska. Zobacz jaką długość
 ma pusty string, czyli `''`.
@@ -261,7 +261,7 @@ W tym rozdziale:
 
 * dowiedzieliśmy się czym jest **string**,
 * poznaliśmy znaczenie słów **metoda** oraz **argument**,
-* nauczyliśmy się najważniejszych metod jakie można wywołać na stringu,
+* nauczyliśmy się najważniejszych metod, jakie można wywołać na stringu,
 * poznaliśmy funkcję `len`, która zwraca długość stringa.
 
 ---

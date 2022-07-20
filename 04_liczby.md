@@ -76,7 +76,7 @@ posłużyć się nawiasami okrągłymi:
 :snake: Oblicz następujące wartości:
 
 * suma dzisiejszego dnia, numeru miesiąca i roku,
-* wynik dzielenia roku Twojego urodzenia przez sumę dnia i miesiąca
+* wynik dzielenia roku Twojego urodzenia przez sumę dnia i miesiąca,
   w których się urodziłaś.
 
 
@@ -130,7 +130,7 @@ Operatory | Znaczenie
 
 W tym rozdziale:
 
-* dowiedzieliśmy się jak definiować liczby całkowite (**integer**)
+* dowiedzieliśmy się, jak definiować liczby całkowite (**integer**)
   i zmiennoprzecinkowe (**float**),
 * poznaliśmy najważniejsze **operatory** matematyczne i ich priorytety.
 

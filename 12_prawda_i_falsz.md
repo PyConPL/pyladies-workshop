@@ -110,7 +110,7 @@ False
 Porównywanie liczb wydaje się zrozumiałe, ale w jaki sposób porównywane
 są stringi?  Odpowiedź jest prostsza niż mogło by się wydawać:
 alfabetycznie.  Litery znajdujące się dalej w alfabecie są "większe"
-od tych wcześniejszych.  Poza tym litery małe są "większe" od tych dużych.
+od tych wcześniejszych.  Poza tym litery małe są "większe" od wielkich.
 
 ```python
 >>> 'A' < 'B' < 'a' < 'b'

@@ -7,9 +7,9 @@ W tym rozdziale:
 
 ## Pomoc w Pythonie
 
-Nawet najlepszy programista nigdy nie zapamięta wszystkich funkcji i metod
+Nawet najlepszy programista nigdy nie zapamięta wszystkich funkcji i metod,
 jakie oferuje Python.  W trakcie tego szkolenia poznasz ich wiele, ale
-za kilka dni zapomnisz jak działają.  Nie przejmuj się, twórcy Pythona
+za kilka dni zapomnisz, jak działają.  Nie przejmuj się, twórcy Pythona
 pomyśleli o tym...
 
 
@@ -35,12 +35,12 @@ find(...)
 
 Dokumentacja nie zawsze jest pisana prostym językiem, ale nie zrażaj się.
 Warto oswajać się z nią od samego początku. Przeczytaj powyższy fragment
-jeszcze raz, a zaraz wyjaśnimy co dokładnie oznaczają poszczególne części.
+jeszcze raz, a zaraz wyjaśnimy, co dokładnie oznaczają poszczególne części.
 
 Dokumentacja pokazuje wszystkie argumenty jakie przyjmuje dana metoda.
 Tę informację zawiera linia "S.find(sub [,start [,end]])".
 Dalej dokumentacja informuje jakiego typu wynik jest zwracany oraz w skrócie
-wyjaśnia co ta metoda robi.  Dzięki temu możemy ją sobie bardzo szybko
+wyjaśnia, co ta metoda robi.  Dzięki temu możemy ją sobie bardzo szybko
 przypomnieć.
 
 Zwróć uwagę, że w tym przykładzie nie otworzyliśmy nawiasu przy nazwie
