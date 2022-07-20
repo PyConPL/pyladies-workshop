@@ -134,7 +134,7 @@ def nazwa_uzytkownika(imie, nazwisko, email):
 
 W powyższym przykładzie funkcja `nazwa_uzytkownika` zwraca pełną nazwę
 użytkownika na podstawie jego imienia, nazwiska i adresu email.  Jeżeli
-imię i nazwisko są dane, to zwracane jest pełne nazwisko, w przyciwnym
+imię i nazwisko są dane, to zwracane jest pełne nazwisko, w przeciwnym
 wypadku zwrócony zostanie tylko adres email.  Sprawdzenie czy pełne
 nazwisko jest podane zostało zapisane w instrukcji
 `if pelne_nazwisko == None`.

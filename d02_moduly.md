@@ -32,7 +32,7 @@ jako moduł.
 
 Gotowy moduł możemy wykorzystać w dowolnym innym programie lub module,
 importując go tam.  Ważne jest, aby oba pliki znajdowały się **w tym
-samym katalogu**, w przeciwnym wypadu Python rzuci wyjątek `ImportError`.
+samym katalogu**, w przeciwnym wypadku Python rzuci wyjątek `ImportError`.
 
 Moduł importujemy instrukcją `import`, w której podajemy jego nazwę, która
 jest taka sama jak nazwa pliku w którym go zapisaliśmy, ale bez

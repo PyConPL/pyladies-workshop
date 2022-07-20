@@ -45,7 +45,7 @@ zapamiętać, aby łatwiej przyswoić kolejne rozdziały.
 Nasz zespół mentorów jest tutaj dla Ciebie! Jeżeli masz pytania, cokolwiek
 jest niejasne albo nie wiesz jak wykonać jakieś zadanie - poproś kogoś
 z nas o pomoc. Chętnie odpowiemy, opowiemy i pomożemy Ci zrozumieć każdy
-temat. Nie krępuj się: my równeż kiedyś zadawaliśmy pytania i właśnie
+temat. Nie krępuj się: my również kiedyś zadawaliśmy pytania i właśnie
 dzięki temu sami możemy teraz na nie odpowiadać.
 
 

@@ -9,8 +9,8 @@ starczy czasu - między innymi dlatego zorganizowaliśmy te warsztaty!
 
 ## O czym nie powiedzieliśmy
 
-Niestety czas na warsztaty jest organiczony, więc i zakres tematów jakie
-poruszyliśmy nie jest wyczerpujący.  Znasz już podstawy Pythona.  Możesz
+Niestety czas na warsztaty jest ograniczony, więc i zakres tematów, jakie
+poruszyliśmy, nie jest wyczerpujący.  Znasz już podstawy Pythona.  Możesz
 już samodzielnie pisać własne programy, a czytanie cudzych nie będzie już
 takie trudne.  Jednak na tym etapie często trafisz na kod, którego nie
 zrozumiesz.  A może już teraz wiesz o tematach, które wydają się

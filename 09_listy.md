@@ -90,8 +90,8 @@ listę i zwraca jej ostatni element.  Użyj w niej funkcji `element`.
 
 ## Metody listy
 
-Listy, podobnie jak stringi mają wiele przydatnych metod.  Poniżej
-znajdziesz opis kilku najbardziej przydatnich z nich.
+Listy, podobnie jak stringi, mają wiele metod.  Poniżej
+znajdziesz opis kilku najbardziej przydatnych z nich.
 
 
 ### `append`

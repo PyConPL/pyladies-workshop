@@ -171,7 +171,7 @@ Na przykład, możemy się dowiedzieć, którą literą alfabetu jest litera `r`
 23
 ```
 
-Zwróc uwagę, że litera `a` jest na pozycji `0`, więc litera `r` tak
+Zwróć uwagę, że litera `a` jest na pozycji `0`, więc litera `r` tak
 na prawdę jest nie dwudziestą trzecią, ale dwudziestą czwartą literą
 alfabetu.  Ten przykład pokazuje jak ważne jest poprawne interpretowanie
 informacji zwracanych przez programy.
