@@ -35,3 +35,11 @@ def usuwanie_elementu(lista, obiekt):
 print(usuwanie_elementu(lista2, "kot"))
 
 print(lista2.index(0))
+
+lista_do_sortowania=[99, 4, 9, 100, 24, 5]
+def sortowanie_listy(lista):
+    posortowana=sorted(lista_do_sortowania)
+    return posortowana[-1]
+print(sortowanie_listy(lista_do_sortowania))
+
+print(lista_do_sortowania[-3:8])
