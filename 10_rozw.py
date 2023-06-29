@@ -18,3 +18,18 @@ def liczenie_liter(lista):
     for i in lista:
         print(i, " w ilości: ", lista.count(i))
 print(liczenie_liter("Dzien dobry co slychac"))
+
+string_do_dzielenia="wtedy string zostanie podzielony w miejscach występowania tego znaku"
+
+def dzielenie_stringa(string):
+    podzielony_string=string.split()
+    for i in podzielony_string:
+        print(i)
+
+print(dzielenie_stringa(string_do_dzielenia))
+
+def funkcja_range(limit):
+    for n in range(0,limit):
+        print(n**2)
+
+print(funkcja_range(5))

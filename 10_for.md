@@ -145,7 +145,7 @@ for liczba in range(100):
 
 :snake: Napisz funkcję, która przyjmie jeden argument o nazwie `limit`
 i zwróci listę wartości od 0 do `limit` podniesionych do kwadratu.
-
+S
 
 ## :pushpin: Podsumowanie
 
