@@ -58,8 +58,15 @@ lista_na=[linia_nazwiska.replace("\n","") for linia_nazwiska in nazwiska_z_pliku
 print(lista_im)
 print(lista_na)
 
+def zmiana_imion_na_nazwiska(stara_lista, nowa_lista):
+    limit = len(stara_lista)
+    for i in range(0,limit):
+        stara_lista[i]= nowa_lista[i]
+    return stara_lista
+print(zmiana_imion_na_nazwiska(lista_im, lista_na))
 
-#użyj list compregension zbey podniesc do kwadratu piec pierwszych liczb
+#użyj list comprehension zbey podniesc do kwadratu piec pierwszych liczb
 
-kwadraty=[liczba**2 for liczba in range(5)]
+kwadraty=[liczba**2 for liczba in range(1,6)]
 print(kwadraty)
+
