@@ -70,3 +70,4 @@ print(zmiana_imion_na_nazwiska(lista_im, lista_na))
 kwadraty=[liczba**2 for liczba in range(1,6)]
 print(kwadraty)
 
+########################################
