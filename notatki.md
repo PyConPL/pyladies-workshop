@@ -3,3 +3,4 @@
 
 `git add` add Add file contents to the index. Files to add content from. Fileglobs (e.g. *.c) can be given to add all matching files. 
 
+`git commit` Record changes to the repository. Important to use -m option and provide commitment message. Othervise terminal will be blocked
