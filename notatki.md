@@ -29,3 +29,5 @@ Metoda ta przydaje się, kiedy na przykład chcemy sprawdzić czy jakaś fraza p
 `'Ala ma kota, a Ola ma psa'.count('ma')` wynik `2`
 
 * `len`- Jedną z najbardziej przydatnych operacji, jaką możemy wykonać na stringu, jest sprawdzenie jego długości. Przykładowo, chcemy sprawdzić czy nie jest zbyt długi, albo chcemy sprawdzić który z dwóch stringów jest dłuższy. Długość stringa:`len('Kubuś Puchatek')`. `Len` nie jest metodą, czyli nie stosujemy notacji obiekt.metoda(). Jest tak, ponieważ sprawdzenie długości jakiegoś obiektu (w tym przypadku: stringa) jest na tyle popularną operacją, że w Pythonie stworzono osobną funkcję, która ją wykonuje
+
+* `help`- Każda metoda zdefiniowana w Pythonie posiada dokumentację, która w kilku słowach opisuje jej działanie. Aby przeczytać tę dokumentację, należy wywołać funkcję help. Przykład: `help('jakiś string'.find)` 
