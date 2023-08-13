@@ -67,7 +67,15 @@ Wszystkie pozostałe znaki są niedozwolone. Co istotne, nazwa nie może zaczyna
 #1abc = 0
 #print(1abc) # SyntaxError: invalid syntax
 
+W każdej chwili możemy zmienić wartość zmiennej:
 
+>>> x = 'Ala ma kota'
+>>> x
+'ala ma kota'
+>>> x = 'kot ma Alę'
+>>> x
+
+Na zmiennych można zastosować metody (zpoprzednich cw) takie jak `find`, `upper`, `title` itp
 
 
 
