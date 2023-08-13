@@ -41,3 +41,16 @@ Metoda ta przydaje się, kiedy na przykład chcemy sprawdzić czy jakaś fraza p
     1. `**` potegowanie 
     2. `*`, `/`, `//`, `%`	Mnożenie, dzielenie, dzielenie całkowite, modulo
     3. `+`. `-` Dodawanie i odejmowanie
+
+`Błędy`:
+
+`SyntaxError`   - Błąd składni 
+
+`EOL`           - End Of Line, Komunikat sugeruję na miejsce błędu
+
+`traceback`     - Pomaga zlokalizować miejsce problemu w kodzie. Uważnie przeczytać komunikat linijka po linijce. Wtedy dojdę co jest nie tak
+
+
+
+
+
