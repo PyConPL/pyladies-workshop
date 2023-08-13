@@ -1,5 +1,6 @@
 `mkdir` tworzenie folder
-`git clone [https://github.com/Misiek01/pyladies-workshop.git]` klonowanie repozytorium
+`git clone [https://github.com/Misiek01/pyladies-workshop.git]` klonowanie repozytorium na Maku
+`git clone 'https://github.com/Misiek01/pyladies-workshop.git' Klonowanie na Win
 
 `git add` add Add file contents to the index. Files to add content from. Fileglobs (e.g. *.c) can be given to add all matching files. 
 
