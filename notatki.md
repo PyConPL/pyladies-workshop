@@ -51,6 +51,26 @@ Metoda ta przydaje się, kiedy na przykład chcemy sprawdzić czy jakaś fraza p
 `traceback`     - Pomaga zlokalizować miejsce problemu w kodzie. Uważnie przeczytać komunikat linijka po linijce. Wtedy dojdę co jest nie tak
 
 
+'Zmienne':
+
+Aby poradzić sobie z problemem przechowania wyniku operacji, używamy zmiennych
+
+Operację zmienna = wartość nazywamy przypisaniem. W wyniku przypisania Python tworzy zmienną, która otrzymuje wartość. Jeżeli wartość jest operacją (np. dodawaniem), to najpierw jest obliczany jej rezultat, a następnie zostaje on przypisany do zmiennej
+
+Ograniczenia na znaki użyte do nazwania zmiennej:
+
+*   litery od a do z (małe) oraz od A do Z (wielkie)
+*   cyfry
+*   znak (podłoga)
+
+Wszystkie pozostałe znaki są niedozwolone. Co istotne, nazwa nie może zaczynać się od cyfry
+#1abc = 0
+#print(1abc) # SyntaxError: invalid syntax
+
+
+
+
+
 
 
 
