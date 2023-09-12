@@ -51,7 +51,7 @@ Metoda ta przydaje się, kiedy na przykład chcemy sprawdzić czy jakaś fraza p
 `traceback`     - Pomaga zlokalizować miejsce problemu w kodzie. Uważnie przeczytać komunikat linijka po linijce. Wtedy dojdę co jest nie tak
 
 
-'Zmienne':
+`ZMIENNE`:
 
 Aby poradzić sobie z problemem przechowania wyniku operacji, używamy zmiennych
 
@@ -77,7 +77,7 @@ W każdej chwili możemy zmienić wartość zmiennej:
 
 Na zmiennych można zastosować metody (zpoprzednich cw) takie jak `find`, `upper`, `title` itp
 
-
+`FUNKCJE`
 
 
 
