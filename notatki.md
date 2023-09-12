@@ -79,6 +79,17 @@ Na zmiennych można zastosować metody (zpoprzednich cw) takie jak `find`, `uppe
 
 `FUNKCJE`
 
+>>> exit()
+PS C:\Users\MIDRA\OneDrive - Ørsted\Desktop\Code\Python_cw> cd 
+PS C:\Users\MIDRA\OneDrive - Ørsted\Desktop\Code\Python_cw> cd .\pyladies-workshop\
+PS C:\Users\MIDRA\OneDrive - Ørsted\Desktop\Code\Python_cw\pyladies-workshop> cd .\Solutions_MD\     
+PS C:\Users\MIDRA\OneDrive - Ørsted\Desktop\Code\Python_cw\pyladies-workshop\Solutions_MD> python
+Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import L07
 
 
+`ctr+/` haszuje zaznaczony obszar kodu 
 
+C:Users>python `-i` LO7.py
+to wywołanie pythona z opcją "i", które wykona funkcje w pliku
