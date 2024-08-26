@@ -48,11 +48,10 @@ złamiemy tę zasadę.
 
 ```python
 >>> 'ala ma kota"
-Traceback (most recent call last):
-  File "python", line 1
+  File "<stdin>", line 1
     'ala ma kota"
-                ^
-SyntaxError: EOL while scanning string literal
+    ^
+SyntaxError: unterminated string literal (detected at line 1)
 ```
 
 Jak widzisz, zamiast wyświetlić tę frazę, Python zgłosił błąd.
@@ -89,6 +88,35 @@ będziesz w stanie zrozumieć, dlaczego Twój program przestał działać, wklej
 ostatnią linijkę komunikatu do wyszukiwarki internetowej.  Jest bardzo
 możliwe, że ktoś już kiedyś spotkał się z takim problemem i znalazł
 rozwiązanie.
+
+Często, wyjątki są sposobem komunikacji pomiędzy programem, który piszesz a
+użytkownikiem, który go uruchamia.  Dzięki nim użytkownik dowiaduje się, co
+poszło nie tak. Poniżej możemy zobaczyć jak pomiędzy wersjami Pythona zmienił się
+komunikat o tym samym błędzie.
+W wersji 3.7 Python zwracał błąd `SyntaxError: EOL while scanning string literal`,
+i bez wiedzy co w żargonie programistycznym oznacza EOL, trudno byłoby zrozumieć
+co jest problemem w przekazanym stringu.
+W wersji 3.12 Python zwraca błąd
+`SyntaxError: unterminated string literal (detected at line 1)`,
+co jest bardziej zrozumiałe, bo informuje nas, że po prostu przekazany string nie został
+zamknięty.
+
+```python
+# Python w wersji 3.7
+>>> 'ala ma kota"
+Traceback (most recent call last):
+  File "python", line 1
+    'ala ma kota"
+                ^
+SyntaxError: EOL while scanning string literal
+
+# Python w wersji 3.12
+>>> 'ala ma kota"
+  File "python", line 1
+    'ala ma kota"
+    ^
+SyntaxError: unterminated string literal (detected at line 1)
+```
 
 :snake: Wywołaj błędy i przeczytaj ze zrozumieniem wyjątki spowodowane
 następującymi operacjami: dzielenie przez zero; wywołanie metody lower() na

@@ -5,25 +5,43 @@ w Pythonie.
 
 ## Zaczynamy!
 
-Otwórz [ten link](https://repl.it/languages/python3) w osobnej karcie
-przeglądarki.
+### Obsługa trybu interaktywnego na replit.com
 
-Jeżeli zobaczysz okienko z prośbą o założenie konta, zamknij je klikając
-w "x".
+Jeśli posiadasz lokalnie zainstalowany interpreter Pythona, to możesz pominąć tę sekcję.
+
+Jeśli nie posiadasz zainstalowanego lokalnie interpretera Pythona, to otwórz
+[ten link](https://replit.com/languages/python3) w osobnej karcie przeglądarki.
+
+Jeżeli nie posiadasz konta na stronie `replit.com` to będziesz musiał/a je
+założyć.
+
+Przejdź do [tego poradnika aby założyć konto](d06_replit.md).
 
 Strona, którą widzisz, jest podzielona na dwie części:
 
 * z lewej strony, na białym tle, jest **edytor** tekstu,
-* z prawej strony widać **tryb interaktywny**.
+* z prawej strony widać konsolę (**Console**) oraz powłokę (**Shell**).
+
+  ![Konsola i powłoka](obrazy/d06/krok_4.png)
 
 Edytor pozwala stworzyć cały kod programu, a następnie uruchomić go przez
-wciśnięcie przycisku "play" (lub kombinacją klawiszy Ctrl + Enter).
-Jeżeli program wypisze jakiś tekst, to zobaczymy go w oknie trybu
-interaktywnego.
+wciśnięcie przycisku "Run" (lub kombinacją klawiszy Ctrl + Enter).
+Jeżeli program wypisze jakiś tekst, to zobaczymy go w konsoli.
 
-Tryb interaktywny działa zupełnie inaczej: czeka na wpisanie polecenia,
-a gdy wciśniesz Enter, wykonuje je i wypisuje jego wynik.  W ten sposób
-możesz programować i od razu oglądać rezultaty.
+Tryb interaktywny możemy aktywować przechodząc do zakładki **Shell** i uruchamiając
+polecenie `python`. Wtedy zobaczymy znak zachęty `>>>`, który oznacza, że
+możemy wpisać polecenie Pythona.
+
+### Tryb interaktywny na własnym komputerze
+
+Tryb interaktywny możemy aktywować uruchamiając w terminalu polecenie `python`.
+Wtedy zobaczymy znak zachęty `>>>`, który oznacza, że
+możemy wpisać polecenie Pythona.
+
+## Tryb interaktywny - jak działa?
+
+Gdy wpiszesz polecenie i wciśniesz Enter, tryb interaktywny wykonuje je i wypisuje jego wynik.
+W ten sposób możesz programować i od razu oglądać rezultaty.
 
 Praca z trybem interaktywnym jest wygodna, kiedy chcesz przetestować
 działanie pojedynczej operacji lub kiedy nie masz pewności jakie operacje
@@ -62,4 +80,3 @@ który należy wpisać w trybie interaktywnym.
 ---
 
 :checkered_flag: Następny rozdział: [Tekst](./02_tekst.md) :checkered_flag:
-

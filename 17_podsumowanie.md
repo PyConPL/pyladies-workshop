@@ -20,8 +20,8 @@ Lista ta nie jest wyczerpująca, ale na pewno pomoże Ci jeszcze
 lepiej poznać Pythona.  W każdym punkcie umieściliśmy odnośnik do strony,
 która wyjaśnia dany temat.
 
-* [Jeszcze więcej o wyjątkach i obsługiwaniu ich](https://docs.python.org/3.6/tutorial/errors.html)
-* [Klasy, czyli programowanie zorientowane obiektowo](https://docs.python.org/3.6/tutorial/classes.html)
+* [Jeszcze więcej o wyjątkach i obsługiwaniu ich](https://docs.python.org/3.12/tutorial/errors.html)
+* [Klasy, czyli programowanie zorientowane obiektowo](https://docs.python.org/3.12/tutorial/classes.html)
 * [Dekoratory](https://docs.python.org/3/glossary.html#term-decorator)
 * [Generatory](https://docs.python.org/3/glossary.html#index-17)
 * [Listy składane](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)

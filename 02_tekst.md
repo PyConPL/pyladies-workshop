@@ -211,7 +211,7 @@ znaku.  Możesz to zrobić podając pusty string jako drugi argument:
 
 :snake: Wpisz w trybie interaktywnym stringa z Twoim imieniem i nazwiskiem,
 a następnie użyj na nim metody `replace` aby zamienić Twoje imię na
-imię jednej z uczestniczek warsztatów siedzącej obok Ciebie.
+imię innej osoby uczestniczącej w warsztatach, siedzącej obok Ciebie.
 
 ### `count`
 
