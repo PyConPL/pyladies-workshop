@@ -73,8 +73,17 @@ dzięki temu sami możemy teraz na nie odpowiadać.
 ## Dodatki
 
 1. [Instalacja Pythona](./d01_instalacja_pythona.md)
-2. [Moduły](./d02_moduly.md)
-2. [Funkcja `input`](./d03_input.md)
-4. [Operacje na plikach](./d04_pliki.md)
-5. [Zadania](./d05_zadania.md)
+2. [Opcjonalna instalacja Visual Studio Code'a, (dokument jest po angielsku)](./d01_instalacja_pythona.md)
+
+   Istotne są sekcje:
+      - [Prerequisites](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)
+      - [Start VS Code in a workspace folder](https://code.visualstudio.com/docs/python/python-tutorial#_start-vs-code-in-a-workspace-folder)
+      - [Create a virtual environment](https://code.visualstudio.com/docs/python/python-tutorial#_create-a-virtual-environment)
+      - [Create a Python source code file](https://code.visualstudio.com/docs/python/python-tutorial#_create-a-python-source-code-file)
+      - [Run Python code](https://code.visualstudio.com/docs/python/python-tutorial#_run-python-code)
+
+3. [Moduły](./d02_moduly.md)
+4. [Funkcja `input`](./d03_input.md)
+5. [Operacje na plikach](./d04_pliki.md)
+6. [Zadania](./d05_zadania.md)
 
