@@ -8,8 +8,8 @@ używasz innego systemu operacyjnego - poproś o pomoc mentora.
 
 ## Krok 1: pobierz program instalacyjny
 
-Wejdź na stronę [https://www.python.org/downloads/](https://www.python.org/downloads/) i odszukaj w niej przycisk
-"Download Python 3.12.5"
+Wejdź na stronę [https://www.python.org/downloads/](https://www.python.org/downloads/)
+i odszukaj w niej przycisk "Download Python 3.12.5"
 (liczby na przycisku oznaczają wersję Pythona i mogą wskazywać również wyższą wersję).
 Kliknij w niego. W ten sposób pobierzesz program instalacyjny Pythona.
 
@@ -19,8 +19,8 @@ Kliknij w niego. W ten sposób pobierzesz program instalacyjny Pythona.
 ## Krok 2: uruchom program instalacyjny
 
 Odszukaj na dysku program instalacyjny i uruchom go.  Zobaczysz okno
-zatytułowane "Install Python 3.12.5".  Upewnij się, że opcja "Add Python
-3.7 to PATH" jest zaznaczona, a następnie kliknij przycisk "Install Now".
+zatytułowane "Install Python 3.12.5".  Upewnij się, że opcja "Add python.exe to PATH"
+jest zaznaczona, a następnie kliknij przycisk "Install Now".
 
 > Jeśli będziesz mieć problem z instalacją Python z użyciem praw administratora - odznacz
 > opcję "Use admin privileges when installing py.exe" i spróbuj ponownie.

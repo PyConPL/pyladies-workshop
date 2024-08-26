@@ -76,7 +76,7 @@ dowolną liczbę i typ obiektów:
 ```
 
 Możliwości metody `format` nie kończą się na zwykłym wstawianiu wartości
-do stringa.  [Dokumentacja Pythona](https://docs.python.org/3.6/library/string.html#formatspec)
+do stringa.  [Dokumentacja Pythona](https://docs.python.org/3.12/library/string.html#formatspec)
 w szczegółach opisuje tę funkcję.  Warto przyjrzeć się choćby przykładom,
 które tam zamieszczono.
 

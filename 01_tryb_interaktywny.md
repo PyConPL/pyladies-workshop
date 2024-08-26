@@ -40,7 +40,7 @@ możemy wpisać polecenie Pythona.
 
 ## Tryb interaktywny - jak działa?
 
-Gdy wpiszesz je i wciśniesz Enter, tryb interaktywny wykonuje je i wypisuje jego wynik.
+Gdy wpiszesz polecenie i wciśniesz Enter, tryb interaktywny wykonuje je i wypisuje jego wynik.
 W ten sposób możesz programować i od razu oglądać rezultaty.
 
 Praca z trybem interaktywnym jest wygodna, kiedy chcesz przetestować
