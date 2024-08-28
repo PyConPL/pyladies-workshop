@@ -141,7 +141,7 @@ listy, jednocześnie usuwając go z niej.
 dodaje do niej ten element, który na samym początku był ostatni.
 
 
-### `count``
+### `count`
 
 `count` przyjmuje jako argument jeden dowolny obiekt i zwraca liczbę
 wystąpień tego obiektu na liście:
