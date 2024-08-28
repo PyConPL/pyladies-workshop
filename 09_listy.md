@@ -1,4 +1,4 @@
-# Rozdział 8. Listy
+# Rozdział 9. Listy
 
 W tym rozdziale:
 
@@ -116,8 +116,10 @@ jej końcu taki sam element jaki jest na samym jej początku.
 
 ### `pop`
 
-Metoda `pop` nie przyjmuje żadnych argumentów, a zwraca ostatni element
-listy, jednocześnie usuwając go z niej:
+Metoda `pop` może nie przyjmować żadnych argumentów - zwraca wtedy ostatni element
+listy, jednocześnie usuwając go z niej. 
+
+* Może też przyjmować argumenty, sprawdzisz to za pomocą funkcji help, chociaż nie jest to teraz potrzebne. W niektórych zadaniach dla uproszczenia możemy pomijać tego typu komentarze
 
 ```python
 >>> litery = ['a', 'b', 'c', 'd']

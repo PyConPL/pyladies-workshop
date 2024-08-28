@@ -12,14 +12,14 @@ pokazują komunikaty o odebranych wiadomościach.  Aplikacje webowe zwracają
 treść stron internetowych.  Serwery zapisują na dysku informacje o tym jak
 przebiega ich działanie.  Tekst to podstawa komunikacji między komputerem
 a człowiekiem.  Właśnie dlatego naukę programowania zaczniemy od operacji
-na tekście, lub, jak mówimy w żargonie programistycznym, na **stringach**.
+na tekście lub, jak mówimy w żargonie programistycznym, na **stringach**.
 
 String, czyli łańcuch znaków, to po prostu ciąg liter, cyfr, kropek,
 przecinków etc. Żeby w Pythonie zdefiniować string, po prostu umieść jakiś
 tekst między znakami `'` (pojedynczy apostrof):
 
 ```python
->>> 'PyLadies 2017'
+>>> 'PyLadies 2024'
 ```
 
 W powyższym stringu znalazły się wielkie i małe litery, odstęp (spacja) oraz
@@ -128,7 +128,7 @@ korzysta się z nich często.
 
 ### `find`
 
-`find` poznaliśmy w przed chwilą: jako argument przyjmuje string i szuka
+`find` poznaliśmy przed chwilą: jako argument przyjmuje string i szuka
 go w stringu na jakim wywołaliśmy operację.  Jeżeli łańcuch zostanie
 znaleziony, otrzymujemy numer znaku, od którego się zaczyna.  W przeciwnym
 wypadku dostaniemy `-1`.
@@ -172,7 +172,7 @@ Na przykład, możemy się dowiedzieć, którą literą alfabetu jest litera `r`
 ```
 
 Zwróć uwagę, że litera `a` jest na pozycji `0`, więc litera `r` tak
-naprawdę jest nie dwudziestą trzecią, ale dwudziestą czwartą literą
+naprawdę jest nie dwudziestą trzecią, a dwudziestą czwartą literą
 alfabetu.  Ten przykład pokazuje jak ważne jest poprawne interpretowanie
 informacji zwracanych przez programy.
 
