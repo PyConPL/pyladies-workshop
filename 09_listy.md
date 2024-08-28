@@ -119,7 +119,7 @@ jej końcu taki sam element jaki jest na samym jej początku.
 Metoda `pop` może nie przyjmować żadnych argumentów - zwraca wtedy ostatni element
 listy, jednocześnie usuwając go z niej. 
 
-* Może też przyjmować argumenty, sprawdzisz to za pomocą funkcji help, chociaż nie jest to teraz potrzebne. W niektórych zadaniach dla uproszczenia moemy pomijać tego typu komentarze
+* Może też przyjmować argumenty, sprawdzisz to za pomocą funkcji help, chociaż nie jest to teraz potrzebne. W niektórych zadaniach dla uproszczenia możemy pomijać tego typu komentarze
 
 ```python
 >>> litery = ['a', 'b', 'c', 'd']
