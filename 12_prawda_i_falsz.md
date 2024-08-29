@@ -204,9 +204,11 @@ else:
 ```
 
 :snake: Napisz funkcję, która porównuje dwie liczby.  Jako argumenty
-powinna przyjmować liczby `a` i `b`.  Jeżeli `a` jest większe od `b`
-powinna zwrócić 1, jeżeli liczby są równe `0`, a jeżeli `a` jest mniejsze
-od `b`, `-1`.  Dodatkowo, w zależności od wyniku porównania, funkcja
+powinna przyjmować liczby `a` i `b`.  
+* jeżeli `a` jest większe od `b`powinna zwrócić 1, 
+* jeżeli liczby są sobie równe, zwrócić 0, 
+* a jeżeli `a` jest mniejsze od `b`, -1.  
+Dodatkowo, w zależności od wyniku porównania, funkcja
 powinna wypisać jeden z komunikatów: `a < b`, `a == b` lub `a > b`.
 
 
